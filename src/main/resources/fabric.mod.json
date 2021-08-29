@@ -1,29 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "tierability",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Tierability",
+  "description": "Tierability is a mod that adds new ores, items, armors and other things with different tiers.",
   "authors": [
-    "Me!"
+    "DoctorNight"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/DoctorNight799/Tierability",
+    "issues": "https://github.com/DoctorNight799/Tierability/issues"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/tierability/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "tierability.TierabilityMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "tierability.mixins.json"
   ],
 
   "depends": {

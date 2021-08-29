@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "tierability.mixin.ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1
