@@ -27,9 +27,9 @@ public class TierabilityConfiguredFeature {
                     5)) // Vein size
             .range(new RangeDecoratorConfig(
                     // You can also use one of the other height providers if you don't want a uniform distribution
-                    UniformHeightProvider.create(YOffset.aboveBottom(20), YOffset.fixed(64)))) // Inclusive min and max height
+                    UniformHeightProvider.create(YOffset.aboveBottom(5), YOffset.fixed(44)))) // Inclusive min and max height
             .spreadHorizontally()
-            .repeat(10); // Number of veins per chunk
+            .repeat(7); // Number of veins per chunk
 
     static public void register() {
         RegistryKey<ConfiguredFeature<?, ?>> oreT1Overworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,

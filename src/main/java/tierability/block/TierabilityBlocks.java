@@ -1,6 +1,5 @@
 package tierability.block;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -20,9 +19,8 @@ public class TierabilityBlocks {
 
     public static final Block T1_ORE = add("t1_ore", new BasedBlock("cube_all"));
 
-    private static <B extends Block> B addBlock(String name, B block) {
+    private static <B extends Block> void addBlock(String name, B block) {
         BLOCKS.put(new Identifier(TierabilityMod.MODID, name), block);
-        return block;
     }
 
     private static FabricBlockSettings copyOf(Block block){
