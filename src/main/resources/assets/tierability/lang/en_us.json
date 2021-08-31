@@ -1,0 +1,11 @@
+{
+  "itemGroup.tierability.items": "Tierability Items",
+  "itemGroup.tierability.blocks": "Tierability Blocks",
+
+  "item.tierability.t1_shard": "T1 Shard",
+  "item.tierability.t1_sword": "T1 Sword",
+  "item.tierability.t1_dagger": "T1 Dagger",
+  "item.tierability.t1_spear": "T1 Spear",
+
+  "block.tierability.t1_ore": "T1 Ore"
+}

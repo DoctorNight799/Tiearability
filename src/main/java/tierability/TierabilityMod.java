@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import tierability.block.TierabilityBlocks;
 import tierability.item.TierabilityItems;
+import tierability.item.tool.TierAbilityTools;
 import tierability.worldgen.feature.TierabilityConfiguredFeature;
 
 public class TierabilityMod implements ModInitializer {
@@ -15,15 +16,16 @@ public class TierabilityMod implements ModInitializer {
 	public static final String MODID = "tierability";
 
 	public static final ItemGroup ITEM_GROUP_ITEMS = FabricItemGroupBuilder.build(
-			new Identifier(MODID, "general"),
-			() -> new ItemStack(Blocks.COBBLESTONE));
+			new Identifier(MODID, "items"),
+			() -> new ItemStack(TierAbilityTools.T1_SWORD));
 	public static final ItemGroup ITEM_GROUP_BLOCKS = FabricItemGroupBuilder.build(
-			new Identifier(MODID, "general"),
-			() -> new ItemStack(Blocks.OBSERVER));
+			new Identifier(MODID, "blocks"),
+			() -> new ItemStack(TierabilityBlocks.T1_ORE));
 
 	@Override
 	public void onInitialize() {
 		TierabilityItems.register();
+		TierAbilityTools.register();
 		TierabilityBlocks.register();
 		TierabilityConfiguredFeature.register();
 	}

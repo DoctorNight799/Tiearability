@@ -1,0 +1,11 @@
+{
+  "itemGroup.tierability.items": "Tierability предметы",
+  "itemGroup.tierability.blocks": "Tierability блоки",
+
+  "item.tierability.t1_shard": "T1 шард",
+  "item.tierability.t1_sword": "T1 меч",
+  "item.tierability.t1_dagger": "T1 клинок",
+  "item.tierability.t1_spear": "T1 копье",
+
+  "block.tierability.t1_ore": "T1 руда"
+}
