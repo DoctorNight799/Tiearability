@@ -35,6 +35,6 @@ public class T1Material implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofStacks(TierabilityItems.T1_SHARD.getDefaultStack());
+        return Ingredient.ofItems(TierabilityItems.T1_SHARD);
     }
 }
