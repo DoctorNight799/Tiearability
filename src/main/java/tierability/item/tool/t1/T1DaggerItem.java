@@ -9,9 +9,10 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
-import tierability.item.tool.base.BaseDagger;
+import tierability.item.tool.base.BaseDaggerItem;
 
-public class T1DaggerItem extends BaseDagger {
+
+public class T1DaggerItem extends BaseDaggerItem {
     public T1DaggerItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }

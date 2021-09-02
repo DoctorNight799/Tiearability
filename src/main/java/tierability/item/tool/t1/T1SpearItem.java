@@ -6,10 +6,10 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
-import tierability.item.tool.base.BaseSpear;
+import tierability.item.tool.base.BaseSpearItem;
 
 
-public class T1SpearItem extends BaseSpear {
+public class T1SpearItem extends BaseSpearItem {
 
 
     public T1SpearItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, float reach, Settings settings) {

@@ -7,11 +7,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 
-public class BaseDagger extends SwordItem {
-
+public class BaseDaggerItem extends SwordItem {
     private final float attackDamage;
 
-    public BaseDagger(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+    public BaseDaggerItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
         this.attackDamage = (float)attackDamage + toolMaterial.getAttackDamage();
     }
