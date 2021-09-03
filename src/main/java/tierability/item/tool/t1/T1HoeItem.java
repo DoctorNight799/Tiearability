@@ -24,7 +24,7 @@ public class T1HoeItem extends HoeItem {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        user.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 60));
+        user.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 5));
         user.getItemCooldownManager().set(this, 300);
         return super.use(world, user, hand);
     }
