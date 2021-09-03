@@ -6,6 +6,24 @@
   "item.tierability.t1_sword": "T1 меч",
   "item.tierability.t1_dagger": "T1 клинок",
   "item.tierability.t1_spear": "T1 копье",
+  "item.tierability.t1_pickaxe": "T1 кирка",
+  "item.tierability.t1_axe": "T1 топор",
+  "item.tierability.t1_shovel": "T1 лопата",
+  "item.tierability.t1_hoe": "T1 мотыга",
 
-  "block.tierability.t1_ore": "T1 руда"
+  "block.tierability.t1_ore": "T1 руда",
+
+  "item.tierability.sword.tooltip": "После удара дает цели замедление.",
+  "item.tierability.dagger.tooltip1": "Больше скорость, но меньше урона.",
+  "item.tierability.dagger.tooltip2": "Наносит больше урона, если ударить в спину.",
+  "item.tierability.dagger.tooltip3": "После удара дает скорость передвижения.",
+  "item.tierability.dagger.tooltip4": "Если используешь его, то скроет тебя.",
+  "item.tierability.spear.tooltip1": "Больше урона, но меньше скорость.",
+  "item.tierability.spear.tooltip2": "Бьет дальше чем меч!",
+  "item.tierability.spear.tooltip3": "После удара усиливает прыжок.",
+  "item.tierability.pickaxe.tooltip": "После разрушения блока дает спешку.",
+  "item.tierability.axe.tooltip1": "После удара дает силу",
+  "item.tierability.axe.tooltip2": "После разрушения блока дает спешку.",
+  "item.tierability.shovel.tooltip": "После разрушения блока дает спешку.",
+  "item.tierability.hoe.tooltip": "После использования дает сытость"
 }

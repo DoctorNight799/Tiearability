@@ -6,6 +6,24 @@
   "item.tierability.t1_sword": "T1 Sword",
   "item.tierability.t1_dagger": "T1 Dagger",
   "item.tierability.t1_spear": "T1 Spear",
+  "item.tierability.t1_pickaxe": "T1 Pickaxe",
+  "item.tierability.t1_axe": "T1 Axe",
+  "item.tierability.t1_shovel": "T1 Shovel",
+  "item.tierability.t1_hoe": "T1 Hoe",
 
-  "block.tierability.t1_ore": "T1 Ore"
+  "block.tierability.t1_ore": "T1 Ore",
+
+  "item.tierability.sword.tooltip": "After hit gives target slowness.",
+  "item.tierability.dagger.tooltip1": "Better speed, but less damage.",
+  "item.tierability.dagger.tooltip2": "Deals more damage if you hit in back.",
+  "item.tierability.dagger.tooltip3": "After hit gives you speed boost.",
+  "item.tierability.dagger.tooltip4": "If you use it, you can hide yourself.",
+  "item.tierability.spear.tooltip1": "More damage, but less speed.",
+  "item.tierability.spear.tooltip2": "Your attack range is more, than with sword!",
+  "item.tierability.spear.tooltip3": "After hit gives you jump boost.",
+  "item.tierability.pickaxe.tooltip": "After breaking a block, gives you haste.",
+  "item.tierability.axe.tooltip1": "After hit gives you strength.",
+  "item.tierability.axe.tooltip2": "After breaking a block, gives you haste.",
+  "item.tierability.shovel.tooltip": "After breaking a block, gives you haste.",
+  "item.tierability.hoe.tooltip": "After use gives you saturation."
 }
