@@ -10,6 +10,10 @@
   "item.tierability.t1_axe": "T1 Axe",
   "item.tierability.t1_shovel": "T1 Shovel",
   "item.tierability.t1_hoe": "T1 Hoe",
+  "item.tierability.t1_helmet": "T1 Helmet",
+  "item.tierability.t1_chestplate": "T1 Chestplate",
+  "item.tierability.t1_leggings": "T1 Leggings",
+  "item.tierability.t1_boots": "T1 Boots",
 
   "block.tierability.t1_ore": "T1 Ore",
 
@@ -25,5 +29,8 @@
   "item.tierability.axe.tooltip1": "After hit gives you strength.",
   "item.tierability.axe.tooltip2": "After breaking a block, gives you haste.",
   "item.tierability.shovel.tooltip": "After breaking a block, gives you haste.",
-  "item.tierability.hoe.tooltip": "After use gives you saturation."
+  "item.tierability.hoe.tooltip": "After use gives you saturation.",
+
+  "tooltip.tierability.full_set_effect": "§7Full Set Effect: ",
+  "tooltip.tierability.resistance": "Resistance"
 }

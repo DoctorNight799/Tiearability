@@ -6,7 +6,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import tierability.block.TierabilityBlocks;
+import tierability.event.TierabilityEvents;
 import tierability.item.TierabilityItems;
+import tierability.item.armor.TierabilityArmor;
 import tierability.item.tool.TierabilityTools;
 import tierability.worldgen.feature.TierabilityConfiguredFeature;
 
@@ -25,7 +27,9 @@ public class TierabilityMod implements ModInitializer {
 	public void onInitialize() {
 		TierabilityItems.register();
 		TierabilityTools.register();
+		TierabilityArmor.register();
 		TierabilityBlocks.register();
+		TierabilityEvents.register();
 		TierabilityConfiguredFeature.register();
 	}
 }
