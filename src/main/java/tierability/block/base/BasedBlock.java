@@ -18,7 +18,7 @@ public class BasedBlock extends Block implements IBlockModel {
     }
 
     public BasedBlock(String parentModel) {
-        super(FabricBlockSettings.copy(Blocks.STONE).sounds(BlockSoundGroup.STONE));
+        super(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.STONE));
         this.parentModel = parentModel;
     }
 
@@ -36,10 +36,10 @@ public class BasedBlock extends Block implements IBlockModel {
         super(settings);
         this.parentModel = parentModel;
     }
-/*
-    public BasedBlock(String parentModel, Material material, Tag fabricToolTags, int miningLevel){
-        super(FabricBlockSettings.of(material).breakByTool(fabricToolTags, miningLevel));
+
+    public BasedBlock(String parentModel, int miningLevel, float hardness, float resistance){
+        super(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, miningLevel).strength(hardness,resistance).sounds(BlockSoundGroup.STONE));
         this.parentModel = parentModel;
-    }*/
+    }
 
 }

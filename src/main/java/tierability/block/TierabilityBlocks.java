@@ -1,12 +1,9 @@
 package tierability.block;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.tag.Tag;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import tierability.TierabilityMod;
@@ -20,9 +17,8 @@ public class TierabilityBlocks {
     private static final Map<Identifier, BlockItem> ITEMS = new LinkedHashMap<>();
     private static final Map<Identifier, Block> BLOCKS = new LinkedHashMap<>();
 
-    public static final Block T1_ORE = add("t1_ore", new BasedBlock("cube_all"));
-   // public static final BasedBlock T2_ORE = add("t2_ore", new BasedBlock("cube_all", Material.STONE,FabricToolTags.PICKAXES, 6));
-  //  public static final Block T2_ORE = add("t2_ore", new BasedBlock("cube_all"));
+    public static final Block T1_ORE = add("t1_ore", new BasedBlock("cube_all", 2, 3.0f, 3.0f));
+    public static final Block T2_ORE = add("t2_ore", new BasedBlock("cube_all", 2, 3.0f, 3.0f));
 
     private static <B extends Block> B add(String name, B block) {
         Item.Settings settings = new Item.Settings();

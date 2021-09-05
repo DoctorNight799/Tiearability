@@ -15,7 +15,7 @@ public class T1Material implements ToolMaterial {
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 2;
+        return 7f;
     }
 
     @Override
@@ -25,7 +25,7 @@ public class T1Material implements ToolMaterial {
 
     @Override
     public int getMiningLevel() {
-        return 6;
+        return 2;
     }
 
     @Override
