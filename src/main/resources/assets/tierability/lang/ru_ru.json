@@ -2,7 +2,7 @@
   "itemGroup.tierability.items": "Tierability предметы",
   "itemGroup.tierability.blocks": "Tierability блоки",
 
-  "item.tierability.t1_shard": "T1 шард",
+  "item.tierability.t1_shard": "T1 осколок",
   "item.tierability.t1_sword": "T1 меч",
   "item.tierability.t1_dagger": "T1 клинок",
   "item.tierability.t1_spear": "T1 копье",
@@ -14,8 +14,10 @@
   "item.tierability.t1_chestplate": "T1 кираса",
   "item.tierability.t1_leggings": "T1 штаны",
   "item.tierability.t1_boots": "T1 ботинки",
+  "item.tierability.t2_shard": "T2 осколок",
 
   "block.tierability.t1_ore": "T1 руда",
+  "block.tierability.t2_ore": "T2 руда",
 
   "item.tierability.sword.tooltip": "После удара дает цели замедление.",
   "item.tierability.dagger.tooltip1": "Больше скорость, но меньше урона.",

@@ -1,5 +1,6 @@
 package tierability.item.tool;
 
+import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;

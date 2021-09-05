@@ -14,8 +14,10 @@
   "item.tierability.t1_chestplate": "T1 Chestplate",
   "item.tierability.t1_leggings": "T1 Leggings",
   "item.tierability.t1_boots": "T1 Boots",
+  "item.tierability.t2_shard": "T2 Shard",
 
   "block.tierability.t1_ore": "T1 Ore",
+  "block.tierability.t2_ore": "T2 Ore",
 
   "item.tierability.sword.tooltip": "After hit gives target slowness.",
   "item.tierability.dagger.tooltip1": "Better speed, but less damage.",

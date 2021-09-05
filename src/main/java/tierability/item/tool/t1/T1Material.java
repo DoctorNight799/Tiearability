@@ -25,7 +25,7 @@ public class T1Material implements ToolMaterial {
 
     @Override
     public int getMiningLevel() {
-        return 2;
+        return 6;
     }
 
     @Override
