@@ -19,6 +19,7 @@ public class TierabilityItems {
 
     public static final Item T1_SHARD = add("t1_shard", new BasedItem(settings()));
     public static final Item T2_SHARD = add("t2_shard", new BasedItem(settings()));
+    public static final Item T2_POWDER = add("t2_powder", new BasedItem(settings()));
 
     private static <I extends Item> I add(String name, I item) {
         ITEMS.put(new Identifier(TierabilityMod.MODID, name), item);

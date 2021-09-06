@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X#"
+  ],
+  "key": {
+    "#": {
+      "item": "tierability:t2_powder"
+    },
+    "X": {
+      "item": "tierability:t1_shard"
+    }
+  },
+  "result": {
+    "item": "tierability:t2_shard"
+  }
+}

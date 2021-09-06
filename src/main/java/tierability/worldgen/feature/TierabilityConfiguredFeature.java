@@ -23,18 +23,34 @@ public class TierabilityConfiguredFeature {
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                     TierabilityBlocks.T1_ORE.getDefaultState(),
-                    5)) // Vein size
+                    6)) // Vein size
             .range(new RangeDecoratorConfig(
                     // You can also use one of the other height providers if you don't want a uniform distribution
-                    UniformHeightProvider.create(YOffset.aboveBottom(5), YOffset.fixed(44)))) // Inclusive min and max height
+                    UniformHeightProvider.create(YOffset.aboveBottom(5), YOffset.fixed(52)))) // Inclusive min and max height
             .spreadHorizontally()
             .repeat(7); // Number of veins per chunk
+
+    private static ConfiguredFeature<?, ?> ORE_T2_OVERWORLD = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
+                    TierabilityBlocks.T2_ORE.getDefaultState(),
+                    4)) // Vein size
+            .range(new RangeDecoratorConfig(
+                    // You can also use one of the other height providers if you don't want a uniform distribution
+                    UniformHeightProvider.create(YOffset.aboveBottom(5), YOffset.fixed(32)))) // Inclusive min and max height
+            .spreadHorizontally()
+            .repeat(5); // Number of veins per chunk
 
     static public void register() {
         RegistryKey<ConfiguredFeature<?, ?>> oreT1Overworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
                 new Identifier(TierabilityMod.MODID, "ore_t1_overworld"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreT1Overworld.getValue(), ORE_T1_OVERWORLD);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreT1Overworld);
+
+        RegistryKey<ConfiguredFeature<?, ?>> oreT2Overworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
+                new Identifier(TierabilityMod.MODID, "ore_t2_overworld"));
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreT2Overworld.getValue(), ORE_T2_OVERWORLD);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreT2Overworld);
     }
 
 
