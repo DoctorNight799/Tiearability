@@ -15,25 +15,28 @@ public class ArmorEffect {
     private final Item leggings;
     private final Item boots;
 
+    private final int amplifier;
+
     private final StatusEffect statusEffect;
 
-    public ArmorEffect(String name, Item helmet, Item chestplate, Item leggings, Item boots, @Nullable StatusEffect statusEffect){
+    public ArmorEffect(String name, Item helmet, Item chestplate, Item leggings, Item boots, @Nullable StatusEffect statusEffect, int amplifier){
         this.name = name;
         this.helmet = helmet;
         this.chestplate = chestplate;
         this.leggings = leggings;
         this.boots = boots;
         this.statusEffect = statusEffect;
-
+        this.amplifier = amplifier;
     }
-    public ArmorEffect(Item helmet, Item chestplate, Item leggings, Item boots, @Nullable StatusEffect statusEffect){
+
+    public ArmorEffect(Item helmet, Item chestplate, Item leggings, Item boots, @Nullable StatusEffect statusEffect, int amplifier){
         this.name = null;
         this.helmet = helmet;
         this.chestplate = chestplate;
         this.leggings = leggings;
         this.boots = boots;
         this.statusEffect = statusEffect;
-
+        this.amplifier = amplifier;
     }
 
     public Item[] getArmorAsList(){
@@ -42,6 +45,10 @@ public class ArmorEffect {
 
     public StatusEffect getStatusEffect(){
         return this.statusEffect;
+    }
+
+    public Integer getAmplifier(){
+        return this.amplifier;
     }
 
     public String getName(){

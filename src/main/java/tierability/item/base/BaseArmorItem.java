@@ -21,7 +21,7 @@ public class BaseArmorItem extends ArmorItem {
     private final String fullSetEffect;
 
     public BaseArmorItem(ArmorMaterial material, EquipmentSlot slot, String fullSetEffect) {
-        super(material, slot, new FabricItemSettings().group(TierabilityMod.ITEM_GROUP_ITEMS));
+        super(material, slot, new FabricItemSettings().group(TierabilityMod.ITEM_GROUP_ARMOR));
 
         this.fullSetEffect = fullSetEffect;
     }

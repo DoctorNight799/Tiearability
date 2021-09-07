@@ -1,5 +1,6 @@
 {
   "itemGroup.tierability.items": "Tierability Items",
+  "itemGroup.tierability.armor": "Tierability Armor",
   "itemGroup.tierability.blocks": "Tierability Blocks",
 
   "item.tierability.t1_shard": "T1 Shard",
@@ -46,5 +47,6 @@
   "item.tierability.hoe.tooltip": "After use gives you saturation.",
 
   "tooltip.tierability.full_set_effect": "§7Full Set Effect: ",
-  "tooltip.tierability.resistance": "Resistance"
+  "tooltip.tierability.speed": "Speed",
+  "tooltip.tierability.jump_boost": "Jump Boost"
 }

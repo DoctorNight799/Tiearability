@@ -1,5 +1,6 @@
 {
   "itemGroup.tierability.items": "Tierability предметы",
+  "itemGroup.tierability.armor": "Tierability броня",
   "itemGroup.tierability.blocks": "Tierability блоки",
 
   "item.tierability.t1_shard": "T1 осколок",
@@ -46,5 +47,6 @@
   "item.tierability.hoe.tooltip": "После использования дает сытость",
 
   "tooltip.tierability.full_set_effect": "§7Эффект полного сета: ",
-  "tooltip.tierability.resistance": "Сопротивление"
+  "tooltip.tierability.speed": "Скорость",
+  "tooltip.tierability.jump_boost": "Прыжок"
 }

@@ -19,6 +19,9 @@ public class TierabilityMod implements ModInitializer {
 	public static final ItemGroup ITEM_GROUP_ITEMS = FabricItemGroupBuilder.build(
 			new Identifier(MODID, "items"),
 			() -> new ItemStack(TierabilityTools.T1_SWORD));
+	public static final ItemGroup ITEM_GROUP_ARMOR = FabricItemGroupBuilder.build(
+			new Identifier(MODID, "armor"),
+			() -> new ItemStack(TierabilityArmor.T1_CHESTPLATE));
 	public static final ItemGroup ITEM_GROUP_BLOCKS = FabricItemGroupBuilder.build(
 			new Identifier(MODID, "blocks"),
 			() -> new ItemStack(TierabilityBlocks.T1_ORE));

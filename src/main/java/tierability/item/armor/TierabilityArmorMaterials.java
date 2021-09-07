@@ -10,4 +10,9 @@ public class TierabilityArmorMaterials {
             new int[] {208, 240, 256, 176},
             new int[] {3, 6, 6, 2}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0,
             Ingredient.ofItems(TierabilityItems.T1_SHARD));
+
+    public static final BaseArmorMaterial T2_ARMOR_MATERIAL = new BaseArmorMaterial("t2",
+            new int[] {395, 560, 515, 451},
+            new int[] {3, 8, 6, 3}, 11, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0,
+            Ingredient.ofItems(TierabilityItems.T2_SHARD));
 }

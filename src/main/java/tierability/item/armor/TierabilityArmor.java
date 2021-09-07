@@ -11,13 +11,19 @@ import tierability.item.base.BaseArmorItem;
 
 public class TierabilityArmor {
 
-    public static final Item T1_HELMET = new BaseArmorItem(TierabilityArmorMaterials.T1_ARMOR_MATERIAL, EquipmentSlot.HEAD, "resistance");
-    public static final Item T1_CHESTPLATE = new BaseArmorItem(TierabilityArmorMaterials.T1_ARMOR_MATERIAL, EquipmentSlot.CHEST, "resistance");
-    public static final Item T1_LEGGINGS = new BaseArmorItem(TierabilityArmorMaterials.T1_ARMOR_MATERIAL, EquipmentSlot.LEGS, "resistance");
-    public static final Item T1_BOOTS = new BaseArmorItem(TierabilityArmorMaterials.T1_ARMOR_MATERIAL, EquipmentSlot.FEET, "resistance");
+    public static final Item T1_HELMET = new BaseArmorItem(TierabilityArmorMaterials.T1_ARMOR_MATERIAL, EquipmentSlot.HEAD, "speed");
+    public static final Item T1_CHESTPLATE = new BaseArmorItem(TierabilityArmorMaterials.T1_ARMOR_MATERIAL, EquipmentSlot.CHEST, "speed");
+    public static final Item T1_LEGGINGS = new BaseArmorItem(TierabilityArmorMaterials.T1_ARMOR_MATERIAL, EquipmentSlot.LEGS, "speed");
+    public static final Item T1_BOOTS = new BaseArmorItem(TierabilityArmorMaterials.T1_ARMOR_MATERIAL, EquipmentSlot.FEET, "speed");
+
+    public static final Item T2_HELMET = new BaseArmorItem(TierabilityArmorMaterials.T2_ARMOR_MATERIAL, EquipmentSlot.HEAD, "jump_boost");
+    public static final Item T2_CHESTPLATE = new BaseArmorItem(TierabilityArmorMaterials.T2_ARMOR_MATERIAL, EquipmentSlot.CHEST, "jump_boost");
+    public static final Item T2_LEGGINGS = new BaseArmorItem(TierabilityArmorMaterials.T2_ARMOR_MATERIAL, EquipmentSlot.LEGS, "jump_boost");
+    public static final Item T2_BOOTS = new BaseArmorItem(TierabilityArmorMaterials.T2_ARMOR_MATERIAL, EquipmentSlot.FEET, "jump_boost");
 
     public static void register(){
         registerArmorSet("t1", T1_HELMET, T1_CHESTPLATE, T1_LEGGINGS, T1_BOOTS);
+        registerArmorSet("t2", T2_HELMET, T2_CHESTPLATE, T2_LEGGINGS, T2_BOOTS);
 
         registerArmorEffects();
     }
@@ -30,7 +36,8 @@ public class TierabilityArmor {
     }
 
     static void registerArmorEffects(){
-        ArmorEffectRegistry.register("T1 Armor", T1_HELMET, T1_CHESTPLATE, T1_LEGGINGS, T1_BOOTS, StatusEffects.RESISTANCE);
+        ArmorEffectRegistry.register("T1 Armor", T1_HELMET, T1_CHESTPLATE, T1_LEGGINGS, T1_BOOTS, StatusEffects.SPEED, 0);
+        ArmorEffectRegistry.register("T2 Armor", T2_HELMET, T2_CHESTPLATE, T2_LEGGINGS, T2_BOOTS, StatusEffects.JUMP_BOOST, 0);
     }
 
 }

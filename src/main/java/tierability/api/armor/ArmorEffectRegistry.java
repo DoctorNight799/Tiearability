@@ -9,16 +9,17 @@ public class ArmorEffectRegistry {
 
     private static final ArrayList<ArmorEffect> armorEffects = new ArrayList<>();
 
-    public static void register(String name, Item helmet, Item chestplate, Item leggings, Item boots, StatusEffect statusEffect){
+    public static void register(String name, Item helmet, Item chestplate, Item leggings, Item boots, StatusEffect statusEffect, int amplifier){
 
-        ArmorEffect armorEffect = new ArmorEffect(name, helmet, chestplate, leggings, boots, statusEffect);
+        ArmorEffect armorEffect = new ArmorEffect(name, helmet, chestplate, leggings, boots, statusEffect, amplifier);
         armorEffects.add(armorEffect);
 
     }
 
-    public static void register(Item helmet, Item chestplate, Item leggings, Item boots, StatusEffect statusEffect){
 
-        ArmorEffect armorEffect = new ArmorEffect(helmet, chestplate, leggings, boots, statusEffect);
+    public static void register(Item helmet, Item chestplate, Item leggings, Item boots, StatusEffect statusEffect, int amplifier){
+
+        ArmorEffect armorEffect = new ArmorEffect(helmet, chestplate, leggings, boots, statusEffect, amplifier);
         armorEffects.add(armorEffect);
 
     }
