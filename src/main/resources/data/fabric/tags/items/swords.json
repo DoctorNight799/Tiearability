@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "tierability:t1_sword"
+    "tierability:t1_sword",
+    "tierability:t1_dagger",
+    "tierability:t1_spear",
+    "tierability:t2_sword",
+    "tierability:t2_dagger",
+    "tierability:t2_spear"
   ]
 }

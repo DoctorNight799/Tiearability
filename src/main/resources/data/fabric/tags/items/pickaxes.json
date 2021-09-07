@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tierability:t1_pickaxe"
+    "tierability:t1_pickaxe",
+    "tierability:t2_pickaxe"
   ]
 }
