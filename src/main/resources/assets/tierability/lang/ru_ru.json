@@ -28,9 +28,15 @@
   "item.tierability.t2_chestplate": "T2 кираса",
   "item.tierability.t2_leggings": "T2 штаны",
   "item.tierability.t2_boots": "T2 ботинки",
+  "item.tierability.t1_2_hammer": "T1-2 молоток",
 
   "block.tierability.t1_ore": "T1 руда",
   "block.tierability.t2_ore": "T2 руда",
+  "block.tierability.t1_block": "T1 блок",
+  "block.tierability.t2_block": "T2 блок",
+  "block.tierability.jump_block_t1": "Прыгучий блок т1",
+  "block.tierability.tiering_block": "Блок тиринга",
+
 
   "item.tierability.sword.tooltip": "После удара дает цели замедление.",
   "item.tierability.dagger.tooltip1": "Больше скорость, но меньше урона.",
@@ -45,8 +51,11 @@
   "item.tierability.axe.tooltip2": "После разрушения блока дает спешку.",
   "item.tierability.shovel.tooltip": "После разрушения блока дает спешку.",
   "item.tierability.hoe.tooltip": "После использования дает сытость",
+  "item.tierability.hammer.tooltip": "Материал для блока тиринга",
 
   "tooltip.tierability.full_set_effect": "§7Эффект полного сета: ",
   "tooltip.tierability.speed": "Скорость",
-  "tooltip.tierability.jump_boost": "Прыжок"
+  "tooltip.tierability.jump_boost": "Прыжок",
+
+  "container.tier": "Улучшить тир"
 }

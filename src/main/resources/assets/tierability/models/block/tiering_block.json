@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "tierability:block/tiering_block_top",
+    "north": "tierability:block/tiering_block_front_t1",
+    "south": "tierability:block/tiering_block_front_t2",
+    "east": "tierability:block/tiering_block_side_t2",
+    "west": "tierability:block/tiering_block_side_t1",
+    "up": "tierability:block/tiering_block_top",
+    "down": "tierability:block/tiering_block_bottom"
+  }
+}

@@ -6,10 +6,9 @@
   "name": "Tierability",
   "description": "Tierability is a mod that adds new ores, items, armors and other things with different tiers.",
   "authors": [
-    "DoctorNight"
+    "LibrarianNight - author"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/DoctorNight799/Tierability",
     "issues": "https://github.com/DoctorNight799/Tierability/issues"
   },

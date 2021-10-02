@@ -1,7 +1,6 @@
 package tierability.block;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -19,6 +18,10 @@ public class TierabilityBlocks {
 
     public static final Block T1_ORE = add("t1_ore", new BasedBlock("cube_all", 2, 3.0f, 3.0f));
     public static final Block T2_ORE = add("t2_ore", new BasedBlock("cube_all", 2, 3.0f, 3.0f));
+    public static final Block T1_BLOCK = add("t1_block", new BasedBlock("cube_all", 3.0f, 3.0f));
+    public static final Block T2_BLOCK = add("t2_block", new BasedBlock("cube_all", 3.0f, 3.0f));
+    public static final Block JUMPING_BLOCK_T1 = add("jump_block_t1", new JumpBlock("cube_all", 2, 2));
+    public static final Block CRAFTING_TIER_BLOCK = add("tiering_block", new CraftingTierBlock("cube", 2, 2));
 
     private static <B extends Block> B add(String name, B block) {
         Item.Settings settings = new Item.Settings();

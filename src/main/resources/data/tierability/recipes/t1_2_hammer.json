@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "Z#X",
+    "Z#X",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "tierability:t2_shard"
+    },
+    "Z": {
+      "item": "tierability:t1_shard"
+    }
+  },
+  "result": {
+    "item": "tierability:t1_2_hammer"
+  }
+}

@@ -7,6 +7,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import tierability.TierabilityMod;
 import tierability.item.tool.t1.*;
+import tierability.item.tool.t1_2.T1_2HammerItem;
+import tierability.item.tool.t1_2.T1_2Material;
 import tierability.item.tool.t2.*;
 
 import java.util.LinkedHashMap;
@@ -31,6 +33,8 @@ public class TierabilityTools {
     public static final ToolItem T2_AXE = add("t2_axe", new T2AxeItem(T2Material.T2_MATERIAL, 2, -2.8f, new Item.Settings().group(TierabilityMod.ITEM_GROUP_ITEMS)));
     public static final ToolItem T2_SHOVEL = add("t2_shovel", new T2ShovelItem(T2Material.T2_MATERIAL, -1.5f, -2.8f, new Item.Settings().group(TierabilityMod.ITEM_GROUP_ITEMS)));
     public static final ToolItem T2_HOE = add("t2_hoe", new T2HoeItem(T2Material.T2_MATERIAL, -6, 0.2f, new Item.Settings().group(TierabilityMod.ITEM_GROUP_ITEMS)));
+
+    public static final ToolItem T1_2_HAMMER = add("t1_2_hammer", new T1_2HammerItem(T1_2Material.T1_2_MATERIAL, -2, -2.2f, new Item.Settings().group(TierabilityMod.ITEM_GROUP_ITEMS)));
 
     private static <I extends ToolItem> I add(String name, I item) {
         TOOLITEMS.put(new Identifier(TierabilityMod.MODID, name), item);

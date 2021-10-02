@@ -7,6 +7,7 @@ public class TierableItem extends BasedItem {
     public TierableItem(Settings settings) {
         super(settings);
     }
+
     public static int getCurrentTier(ItemStack stack){
         if(stack.getOrCreateNbt().getInt("itemTier") >= 2) return stack.getOrCreateNbt().getInt("itemTier");
         else return 1;

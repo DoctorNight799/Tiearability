@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "S"
+  ],
+  "key": {
+    "#": {
+      "item": "tierability:t1_2_hammer"
+    },
+    "S": {
+      "item": "minecraft:smithing_table"
+    }
+  },
+  "result": {
+    "item": "tierability:tiering_block"
+  }
+}
