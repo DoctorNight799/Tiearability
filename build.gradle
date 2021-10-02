@@ -22,10 +22,6 @@ repositories {
 			includeGroup "com.jamieswhiteshirt"
 		}
 	}
-	maven {
-		name = "CottonMC"
-		url = "https://server.bbkr.space/artifactory/libs-release"
-	}
 }
 
 dependencies {
@@ -37,7 +33,6 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_version}")
-	modImplementation include("io.github.cottonmc:LibGui:${project.gui_version}")
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
