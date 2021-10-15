@@ -1,9 +1,12 @@
 {
   "itemGroup.tierability.items": "Tierability Items",
+  "itemGroup.tierability.tools": "Tierability Tools",
   "itemGroup.tierability.armor": "Tierability Armor",
   "itemGroup.tierability.blocks": "Tierability Blocks",
 
   "item.tierability.t1_shard": "T1 Shard",
+  "item.tierability.t1_ingot": "T1 Ingot",
+
   "item.tierability.t1_sword": "T1 Sword",
   "item.tierability.t1_dagger": "T1 Dagger",
   "item.tierability.t1_spear": "T1 Spear",
@@ -11,12 +14,16 @@
   "item.tierability.t1_axe": "T1 Axe",
   "item.tierability.t1_shovel": "T1 Shovel",
   "item.tierability.t1_hoe": "T1 Hoe",
+
   "item.tierability.t1_helmet": "T1 Helmet",
   "item.tierability.t1_chestplate": "T1 Chestplate",
   "item.tierability.t1_leggings": "T1 Leggings",
   "item.tierability.t1_boots": "T1 Boots",
+
   "item.tierability.t2_shard": "T2 Shard",
   "item.tierability.t2_powder": "T2 Powder",
+  "item.tierability.t2_ingot": "T2 Ingot",
+
   "item.tierability.t2_sword": "T2 Sword",
   "item.tierability.t2_dagger": "T2 Dagger",
   "item.tierability.t2_spear": "T2 Spear",
@@ -24,17 +31,47 @@
   "item.tierability.t2_axe": "T2 Axe",
   "item.tierability.t2_shovel": "T2 Shovel",
   "item.tierability.t2_hoe": "T2 Hoe",
+
   "item.tierability.t2_helmet": "T2 Helmet",
   "item.tierability.t2_chestplate": "T2 Chestplate",
   "item.tierability.t2_leggings": "T2 Leggings",
   "item.tierability.t2_boots": "T2 Boots",
+
   "item.tierability.t1_2_hammer": "T1-2 Hammer",
+
+  "item.tierability.t1_upgraded_sword": "T1 Upgraded Sword",
+  "item.tierability.t1_upgraded_dagger": "T1 Upgraded Dagger",
+  "item.tierability.t1_upgraded_spear": "T1 Upgraded Spear",
+  "item.tierability.t1_upgraded_pickaxe": "T1 Upgraded Pickaxe",
+  "item.tierability.t1_upgraded_axe": "T1 Upgraded Axe",
+  "item.tierability.t1_upgraded_shovel": "T1 Upgraded Shovel",
+  "item.tierability.t1_upgraded_hoe": "T1 Upgraded Hoe",
+
+
+  "item.tierability.t1_upgraded_helmet": "T1 Upgraded Helmet",
+  "item.tierability.t1_upgraded_chestplate": "T1 Upgraded Chestplate",
+  "item.tierability.t1_upgraded_leggings": "T1 Upgraded Leggings",
+  "item.tierability.t1_upgraded_boots": "T1 Upgraded Boots",
+
+  "item.tierability.t2_upgraded_sword": "T2 Upgraded Sword",
+  "item.tierability.t2_upgraded_dagger": "T2 Upgraded Dagger",
+  "item.tierability.t2_upgraded_spear": "T2 Upgraded Spear",
+  "item.tierability.t2_upgraded_pickaxe": "T2 Upgraded Pickaxe",
+  "item.tierability.t2_upgraded_axe": "T2 Upgraded Axe",
+  "item.tierability.t2_upgraded_shovel": "T2 Upgraded Shovel",
+  "item.tierability.t2_upgraded_hoe": "T2 Upgraded Hoe",
+
+  "item.tierability.t2_upgraded_helmet": "T2 Upgraded Helmet",
+  "item.tierability.t2_upgraded_chestplate": "T2 Upgraded Chestplate",
+  "item.tierability.t2_upgraded_leggings": "T2 Upgraded Leggings",
+  "item.tierability.t2_upgraded_boots": "T2 Upgraded Boots",
 
   "block.tierability.t1_ore": "T1 Ore",
   "block.tierability.t2_ore": "T2 Ore",
   "block.tierability.t1_block": "T1 Block",
   "block.tierability.t2_block": "T2 Block",
   "block.tierability.jump_block_t1": "Jump Block T1",
+  "block.tierability.jump_block_t2": "Jump Block T2",
   "block.tierability.tiering_block": "Tiering Block",
 
   "item.tierability.sword.tooltip": "After hitting a target, gives the target slowness.",

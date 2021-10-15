@@ -27,6 +27,9 @@ public class TierabilityMod implements ModInitializer {
 
 	public static final ItemGroup ITEM_GROUP_ITEMS = FabricItemGroupBuilder.build(
 			new Identifier(MODID, "items"),
+			() -> new ItemStack(TierabilityItems.T1_INGOT));
+	public static final ItemGroup ITEM_GROUP_TOOLS = FabricItemGroupBuilder.build(
+			new Identifier(MODID, "items"),
 			() -> new ItemStack(TierabilityTools.T1_SWORD));
 	public static final ItemGroup ITEM_GROUP_ARMOR = FabricItemGroupBuilder.build(
 			new Identifier(MODID, "armor"),
@@ -42,7 +45,7 @@ public class TierabilityMod implements ModInitializer {
 			return null;
 		}
 	});
-	public static final RecipeSerializer<TierRecipe> TIER_RECIPE_SER = Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(MODID, "tier_recipe"), new TierRecipe.Serializer());
+	public static final RecipeSerializer<TierRecipe> TIER_RECIPE_SER = Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(MODID, "tiering"), new TierRecipe.Serializer());
 
 	@Override
 	public void onInitialize() {

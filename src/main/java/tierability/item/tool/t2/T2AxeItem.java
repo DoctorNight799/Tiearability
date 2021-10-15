@@ -25,7 +25,7 @@ public class T2AxeItem extends AxeItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if(attacker instanceof PlayerEntity player) {
-            attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 100));
+            attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 80));
         }
         return super.postHit(stack, target, attacker);
     }
@@ -33,7 +33,7 @@ public class T2AxeItem extends AxeItem {
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if(miner instanceof PlayerEntity player) {
-            miner.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 160));
+            miner.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 120));
         }
         return super.postMine(stack, world, state, pos, miner);
     }

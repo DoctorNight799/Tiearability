@@ -21,7 +21,7 @@ public class T2SwordItem extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 160));
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 140));
         return super.postHit(stack, target, attacker);
     }
 

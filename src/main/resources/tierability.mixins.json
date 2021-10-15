@@ -4,7 +4,7 @@
   "package": "tierability.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-
+    "LivingEntityMixin"
   ],
   "client": [
     "StatusEffectUtilMixin"

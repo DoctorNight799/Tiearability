@@ -25,7 +25,7 @@ public class T2ShovelItem extends ShovelItem {
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if(miner instanceof PlayerEntity player) {
-            miner.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 160));
+            miner.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 120));
         }
         return super.postMine(stack, world, state, pos, miner);
     }

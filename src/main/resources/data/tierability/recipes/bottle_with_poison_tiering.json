@@ -1,0 +1,13 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:bottle_with_poison"
+  },
+  "addition": {
+    "item": "minecraft:spider_eye"
+  },
+  "result": {
+    "item": "tierability:bottle_with_poison",
+    "tier": 2
+  }
+}

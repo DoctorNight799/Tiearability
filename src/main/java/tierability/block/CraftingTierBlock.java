@@ -32,8 +32,8 @@ public class CraftingTierBlock extends Block implements IBlockModel {
         this.parentModel = parentModel;
     }
 
-    public CraftingTierBlock(String parentModel, int miningLevel, int multiplier){
-        super(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, miningLevel).strength(2.0f,1.0f).jumpVelocityMultiplier(multiplier).slipperiness(0.4f).sounds(BlockSoundGroup.STONE));
+    public CraftingTierBlock(String parentModel, int miningLevel){
+        super(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, miningLevel).strength(2.0f,1.0f).sounds(BlockSoundGroup.STONE));
         this.parentModel = parentModel;
     }
 

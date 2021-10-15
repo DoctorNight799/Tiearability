@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "tierability:item/t1_upgraded_shovel"
+  }
+}

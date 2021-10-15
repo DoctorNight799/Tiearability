@@ -21,7 +21,7 @@ public class JumpBlock extends Block implements IBlockModel {
     }
 
     public JumpBlock(String parentModel, int miningLevel, int multiplier){
-        super(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).requiresTool().breakByTool(FabricToolTags.PICKAXES, miningLevel).strength(2.0f,1.0f).jumpVelocityMultiplier(multiplier).slipperiness(0.4f).sounds(BlockSoundGroup.SLIME));
+        super(FabricBlockSettings.of(Material.ORGANIC_PRODUCT).requiresTool().breakByTool(FabricToolTags.PICKAXES, miningLevel).strength(2.0f,1.0f).jumpVelocityMultiplier(multiplier).slipperiness(0.9f).sounds(BlockSoundGroup.SLIME));
         this.parentModel = parentModel;
     }
 }

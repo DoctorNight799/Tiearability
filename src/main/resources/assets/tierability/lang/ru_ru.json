@@ -1,9 +1,12 @@
 {
   "itemGroup.tierability.items": "Tierability предметы",
+  "itemGroup.tierability.tools": "Tierability инструменты",
   "itemGroup.tierability.armor": "Tierability броня",
   "itemGroup.tierability.blocks": "Tierability блоки",
 
   "item.tierability.t1_shard": "T1 осколок",
+  "item.tierability.t1_ingot": "T1 слиток",
+
   "item.tierability.t1_sword": "T1 меч",
   "item.tierability.t1_dagger": "T1 кинжал",
   "item.tierability.t1_spear": "T1 копье",
@@ -11,12 +14,16 @@
   "item.tierability.t1_axe": "T1 топор",
   "item.tierability.t1_shovel": "T1 лопата",
   "item.tierability.t1_hoe": "T1 мотыга",
+
   "item.tierability.t1_helmet": "T1 шлем",
   "item.tierability.t1_chestplate": "T1 кираса",
   "item.tierability.t1_leggings": "T1 штаны",
   "item.tierability.t1_boots": "T1 ботинки",
+
   "item.tierability.t2_shard": "T2 осколок",
   "item.tierability.t2_powder": "T2 пыль",
+  "item.tierability.t2_ingot": "T2 слиток",
+
   "item.tierability.t2_sword": "T2 меч",
   "item.tierability.t2_dagger": "T2 кинжал",
   "item.tierability.t2_spear": "T2 копье",
@@ -24,17 +31,30 @@
   "item.tierability.t2_axe": "T2 топор",
   "item.tierability.t2_shovel": "T2 лопата",
   "item.tierability.t2_hoe": "T2 мотыга",
+
   "item.tierability.t2_helmet": "T2 шлем",
   "item.tierability.t2_chestplate": "T2 кираса",
   "item.tierability.t2_leggings": "T2 штаны",
   "item.tierability.t2_boots": "T2 ботинки",
+
   "item.tierability.t1_2_hammer": "T1-2 молоток",
+
+  "item.tierability.t1_upgraded_helmet": "T1 улучшенный шлем",
+  "item.tierability.t1_upgraded_chestplate": "T1 улучшенный нагрудник",
+  "item.tierability.t1_upgraded_leggings": "T1 улучшенные штаны",
+  "item.tierability.t1_upgraded_boots": "T1 улучшенные ботинки",
+
+  "item.tierability.t2_upgraded_helmet": "T2 улучшенный шлем",
+  "item.tierability.t2_upgraded_chestplate": "T2 улучшенный нагрудник",
+  "item.tierability.t2_upgraded_leggings": "T2 улучшенные штаны",
+  "item.tierability.t2_upgraded_boots": "T2 улучшенные ботинки",
 
   "block.tierability.t1_ore": "T1 руда",
   "block.tierability.t2_ore": "T2 руда",
   "block.tierability.t1_block": "T1 блок",
   "block.tierability.t2_block": "T2 блок",
   "block.tierability.jump_block_t1": "Прыгучий блок т1",
+  "block.tierability.jump_block_t2": "Прыгучий блок т2",
   "block.tierability.tiering_block": "Блок тиринга",
 
 

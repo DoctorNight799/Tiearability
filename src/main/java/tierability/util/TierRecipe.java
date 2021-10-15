@@ -1,16 +1,22 @@
 package tierability.util;
 
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
+import com.google.gson.JsonSyntaxException;
 import net.minecraft.inventory.Inventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.recipe.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import tierability.TierabilityMod;
 import tierability.block.TierabilityBlocks;
+import tierability.item.base.TierableItem;
 
 import java.util.stream.Stream;
 
@@ -78,11 +84,48 @@ public class TierRecipe implements Recipe<Inventory> {
     public static class Serializer implements RecipeSerializer<TierRecipe> {
         public Serializer() {
         }
+        public static Item getItem(JsonObject json) {
+            String string = JsonHelper.getString(json, "item");
+            Item item = (Item) Registry.ITEM.getOrEmpty(new Identifier(string)).orElseThrow(() -> {
+                return new JsonSyntaxException("Unknown item '" + string + "'");
+            });
+            if (item == Items.AIR) {
+                throw new JsonSyntaxException("Invalid item: " + string);
+            } else {
+                return item;
+            }
+        }
+
+        public static ItemStack outputFromJson(JsonObject json) {
+            Item item = getItem(json);
+            if (json.has("data")) {
+                throw new JsonParseException("Disallowed data tag found");
+            } else {
+                int a = JsonHelper.getInt(json, "Tier", 0);
+
+                int i = JsonHelper.getInt(json, "count", 1);
+                if (i < 1) {
+                    throw new JsonSyntaxException("Invalid output count: " + i);
+                } else {
+                    if(a > 0) {
+                        ItemStack tierItem = new ItemStack(item,i);
+                        NbtCompound nbtCompound = tierItem.getOrCreateNbt();
+                        nbtCompound.putInt("Tier", a);
+
+
+                        tierItem.writeNbt(nbtCompound);
+                        return tierItem;
+                    } else  {
+                        return new ItemStack(item, i);
+                    }
+                }
+            }
+        }
 
         public TierRecipe read(Identifier identifier, JsonObject jsonObject) {
             Ingredient ingredient = Ingredient.fromJson(JsonHelper.getObject(jsonObject, "base"));
             Ingredient ingredient2 = Ingredient.fromJson(JsonHelper.getObject(jsonObject, "addition"));
-            ItemStack itemStack = ShapedRecipe.outputFromJson(JsonHelper.getObject(jsonObject, "result"));
+            ItemStack itemStack = outputFromJson(JsonHelper.getObject(jsonObject, "result"));
             return new TierRecipe(identifier, ingredient, ingredient2, itemStack);
         }
 

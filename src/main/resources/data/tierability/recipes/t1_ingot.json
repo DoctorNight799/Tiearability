@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "tierability:t1_shard"
+  },
+  "result": "tierability:t1_ingot",
+  "experience": 6,
+  "cookingtime": 1200
+}

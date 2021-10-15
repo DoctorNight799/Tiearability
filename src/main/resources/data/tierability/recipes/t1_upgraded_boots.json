@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:t1_boots"
+  },
+  "addition": {
+    "item": "tierability:t1_ingot"
+  },
+  "result": {
+    "item": "tierability:t1_upgraded_boots"
+  }
+}

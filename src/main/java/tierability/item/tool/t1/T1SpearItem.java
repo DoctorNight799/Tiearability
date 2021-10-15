@@ -18,7 +18,6 @@ import java.util.List;
 
 public class T1SpearItem extends BaseSpearItem {
 
-
     public T1SpearItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, float reach, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, reach, settings);
     }

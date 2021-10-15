@@ -8,9 +8,9 @@
   "key": {
     "#": {
       "item": "tierability:t2_shard"
-    },
+    }
+  },
     "result": {
       "item": "tierability:t2_block"
     }
-  }
 }

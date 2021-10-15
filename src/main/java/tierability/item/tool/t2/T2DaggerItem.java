@@ -24,13 +24,13 @@ public class T2DaggerItem extends BaseDaggerItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 140));
+        attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 120));
         return super.postHit(stack, target, attacker);
     }
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        user.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 100));
+        user.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 80));
         user.getItemCooldownManager().set(this, 200);
         return super.use(world, user, hand);
     }

@@ -9,15 +9,16 @@ public class TierableItem extends BasedItem {
     }
 
     public static int getCurrentTier(ItemStack stack){
-        if(stack.getOrCreateNbt().getInt("itemTier") >= 2) return stack.getOrCreateNbt().getInt("itemTier");
+        if(stack.getOrCreateNbt().getInt("Tier") >= 2) return stack.getOrCreateNbt().getInt("Tier");
         else return 1;
     }
 
     public static ItemStack withTier(Item item, int tier){
         ItemStack itemStack = new ItemStack(item);
         if (tier >= 2){
-            itemStack.getOrCreateNbt().putInt("itemTier", tier);
+            itemStack.getOrCreateNbt().putInt("Tier", tier);
         }
         return itemStack;
     }
+
 }
