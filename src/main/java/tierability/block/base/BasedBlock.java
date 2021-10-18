@@ -5,54 +5,33 @@ import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
-import net.minecraft.client.item.TooltipContext;
-import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.tag.Tag;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
-import net.minecraft.world.BlockView;
-import org.jetbrains.annotations.Nullable;
-import tierability.interfaces.IBlockModel;
+import ru.bclib.interfaces.BlockModelProvider;
 
-import java.util.List;
+public class BasedBlock extends Block {
 
-public class BasedBlock extends Block implements IBlockModel {
-    private final String parentModel;
-
-    @Override
-    public String getParent() {
-        return parentModel;
-    }
-
-    public BasedBlock(String parentModel) {
+    public BasedBlock() {
         super(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.STONE));
-        this.parentModel = parentModel;
     }
 
-    public BasedBlock(Block copyOf, BlockSoundGroup blockSoundGroup, String parentModel) {
+    public BasedBlock(Block copyOf, BlockSoundGroup blockSoundGroup) {
         super(FabricBlockSettings.copy(copyOf).sounds(blockSoundGroup));
-        this.parentModel = parentModel;
     }
 
-    public BasedBlock(Block copyOf, String parentModel) {
+    public BasedBlock(Block copyOf) {
         super(FabricBlockSettings.copy(copyOf));
-        this.parentModel = parentModel;
     }
 
-    public BasedBlock(FabricBlockSettings settings, String parentModel) {
+    public BasedBlock(FabricBlockSettings settings) {
         super(settings);
-        this.parentModel = parentModel;
     }
 
-    public BasedBlock(String parentModel, int miningLevel, float hardness, float resistance){
+    public BasedBlock(int miningLevel, float hardness, float resistance){
         super(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, miningLevel).strength(hardness,resistance).sounds(BlockSoundGroup.STONE));
-        this.parentModel = parentModel;
     }
 
-    public BasedBlock(String parentModel, float hardness, float resistance){
+    public BasedBlock(float hardness, float resistance){
         super(FabricBlockSettings.of(Material.METAL).requiresTool().strength(hardness,resistance).sounds(BlockSoundGroup.METAL));
-        this.parentModel = parentModel;
     }
 
 }

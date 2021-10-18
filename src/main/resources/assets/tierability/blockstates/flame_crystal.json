@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "tierability:block/flame_crystal",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "tierability:block/flame_crystal",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tierability:block/flame_crystal",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "tierability:block/flame_crystal",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "tierability:block/flame_crystal"
+    },
+    "facing=west": {
+      "model": "tierability:block/flame_crystal",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

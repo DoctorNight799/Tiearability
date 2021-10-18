@@ -32,9 +32,6 @@ public class TierabilityItems {
     }
 
     public static void register() {
-        for (Identifier id : ITEMS.keySet()) {
-            Registry.register(Registry.ITEM, id, ITEMS.get(id));
-        }
-
+        ITEMS.forEach((id, item) -> Registry.register(Registry.ITEM, id, ITEMS.get(id)));
     }
 }

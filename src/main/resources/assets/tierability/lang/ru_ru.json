@@ -49,6 +49,8 @@
   "item.tierability.t2_upgraded_leggings": "T2 улучшенные штаны",
   "item.tierability.t2_upgraded_boots": "T2 улучшенные ботинки",
 
+  "item.tierability.bottle_with_poison": "Бутылка с ядом",
+
   "block.tierability.t1_ore": "T1 руда",
   "block.tierability.t2_ore": "T2 руда",
   "block.tierability.t1_block": "T1 блок",
@@ -56,7 +58,6 @@
   "block.tierability.jump_block_t1": "Прыгучий блок т1",
   "block.tierability.jump_block_t2": "Прыгучий блок т2",
   "block.tierability.tiering_block": "Блок тиринга",
-
 
   "item.tierability.sword.tooltip": "После удара дает цели замедление.",
   "item.tierability.dagger.tooltip1": "Больше скорость, но меньше урона.",

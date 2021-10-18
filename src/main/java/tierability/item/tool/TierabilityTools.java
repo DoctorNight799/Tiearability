@@ -67,9 +67,7 @@ public class TierabilityTools {
     }
 
     public static void register(){
-        for (Identifier id : TOOLITEMS.keySet()) {
-            Registry.register(Registry.ITEM, id, TOOLITEMS.get(id));
-        }
+        TOOLITEMS.forEach((id, item) -> Registry.register(Registry.ITEM, id, TOOLITEMS.get(id)));
     }
 }
 

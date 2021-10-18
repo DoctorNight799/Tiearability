@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "tierability.TierabilityMod"
+    ],
+    "client": [
+      "tierability.client.TierabilityClient"
     ]
   },
   "mixins": [
@@ -30,9 +33,13 @@
     "fabricloader": ">=0.11.3",
     "fabric": "*",
     "minecraft": "1.17.x",
-    "java": ">=16"
+    "java": ">=16",
+    "reach-entity-attributes": ">=2.1.1"
   },
+
   "suggests": {
-    "another-mod": "*"
-  }
+    "bclib": "*"
+  },
+
+  "accessWidener": "tierability.accesswidener"
 }
