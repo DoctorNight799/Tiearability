@@ -6,21 +6,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.sound.BlockSoundGroup;
-import ru.bclib.interfaces.BlockModelProvider;
+import ru.bclib.blocks.BaseBlock;
 
-public class BasedBlock extends Block {
-
-    public BasedBlock() {
-        super(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.STONE));
-    }
-
-    public BasedBlock(Block copyOf, BlockSoundGroup blockSoundGroup) {
-        super(FabricBlockSettings.copy(copyOf).sounds(blockSoundGroup));
-    }
-
-    public BasedBlock(Block copyOf) {
-        super(FabricBlockSettings.copy(copyOf));
-    }
+public class BasedBlock extends BaseBlock {
 
     public BasedBlock(FabricBlockSettings settings) {
         super(settings);

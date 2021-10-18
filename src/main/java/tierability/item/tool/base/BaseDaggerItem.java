@@ -6,8 +6,9 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import ru.bclib.items.tool.BaseSwordItem;
 
-public class BaseDaggerItem extends SwordItem {
+public class BaseDaggerItem extends BaseSwordItem {
     private final float attackDamage;
 
     public BaseDaggerItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {

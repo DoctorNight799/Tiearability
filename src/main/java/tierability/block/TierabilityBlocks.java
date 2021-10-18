@@ -9,10 +9,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import tierability.TierabilityMod;
-import tierability.block.base.BasedBlock;
-import tierability.block.base.CraftingTierBlock;
-import tierability.block.base.CrystalBasedBlock;
-import tierability.block.base.JumpBlock;
+import tierability.block.base.*;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -29,17 +26,13 @@ public class TierabilityBlocks {
     public static final Block JUMPING_BLOCK_T1 = add("jump_block_t1", new JumpBlock( 2, 2));
     public static final Block JUMPING_BLOCK_T2 = add("jump_block_t2", new JumpBlock(2, 3));
     public static final Block CRAFTING_TIER_BLOCK = add("tiering_block", new CraftingTierBlock( 2));
-    public static final Block FLAME_CRYSTAL = addCrystal("flame_crystal", "flame");
+    public static final Block FLAME_CRYSTAL = add("flame_crystal", new FlameCrystal("flame"));
 
 
     private static <B extends Block> B add(String name, B block) {
         Item.Settings settings = new Item.Settings();
         settings.group(TierabilityMod.ITEM_GROUP_BLOCKS);
         return addBlockItem(name, block, new BlockItem(block, settings));
-    }
-
-    private static Block addCrystal(String name, String type){
-        return add(name, new CrystalBasedBlock(copyOf(Blocks.COBBLESTONE).sounds(BlockSoundGroup.AMETHYST_CLUSTER).luminance(10), type));
     }
 
     private static FabricBlockSettings copyOf(Block block){
@@ -68,5 +61,4 @@ public class TierabilityBlocks {
     public static Map<Identifier, Block> getBlocks() {
         return BLOCKS;
     }
-
 }

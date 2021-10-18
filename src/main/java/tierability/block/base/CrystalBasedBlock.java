@@ -1,6 +1,5 @@
 package tierability.block.base;
 
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.block.AmethystClusterBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.item.TooltipContext;
@@ -18,7 +17,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.World;
+
 import org.jetbrains.annotations.Nullable;
 
 import java.util.*;
@@ -55,14 +54,6 @@ public class CrystalBasedBlock extends AmethystClusterBlock {
     public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
         super.appendTooltip(stack, world, tooltip, options);
         tooltip.add(new TranslatableText("crystal.tierability." + type).formatted(Formatting.GRAY));
-    }
-
-    @Override
-    public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-        super.randomDisplayTick(state, world, pos, random);
-        if(random.nextFloat() > 0.5) {
-            world.addParticle(ParticleTypes.SMALL_FLAME, pos.getX() + random.nextFloat(), pos.getY() + random.nextFloat(), pos.getZ() + random.nextFloat(), 0, 0, 0);
-        }
     }
 
     @Override

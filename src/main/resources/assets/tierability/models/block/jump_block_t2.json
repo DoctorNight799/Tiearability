@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "tierability:block/jump_block_t2"
-  }
-}

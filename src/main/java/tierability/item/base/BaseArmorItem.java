@@ -16,7 +16,7 @@ import tierability.TierabilityMod;
 
 import java.util.List;
 
-public class BaseArmorItem extends ArmorItem {
+public class BaseArmorItem extends ru.bclib.items.BaseArmorItem {
 
     private final String fullSetEffect;
 

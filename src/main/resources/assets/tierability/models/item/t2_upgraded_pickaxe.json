@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "tierability:item/t2_upgraded_pickaxe"
-  }
-}

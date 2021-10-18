@@ -1,22 +1,16 @@
 package tierability.item.tool.t1_upgraded;
 
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.HoeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
+import tierability.item.tool.base.CustomHoeItem;
 
-import java.util.List;
-
-public class T1UpgradedHoeItem extends HoeItem {
+public class T1UpgradedHoeItem extends CustomHoeItem {
     public T1UpgradedHoeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
         super(material, attackDamage, attackSpeed, settings);
     }
@@ -26,11 +20,5 @@ public class T1UpgradedHoeItem extends HoeItem {
         user.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 4));
         user.getItemCooldownManager().set(this, 250);
         return super.use(world, user, hand);
-    }
-
-    @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(new TranslatableText("item.tierability.hoe.tooltip"));
-        super.appendTooltip(stack, world, tooltip, context);
     }
 }

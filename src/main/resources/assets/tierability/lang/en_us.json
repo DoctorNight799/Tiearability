@@ -47,7 +47,6 @@
   "item.tierability.t1_upgraded_shovel": "T1 Upgraded Shovel",
   "item.tierability.t1_upgraded_hoe": "T1 Upgraded Hoe",
 
-
   "item.tierability.t1_upgraded_helmet": "T1 Upgraded Helmet",
   "item.tierability.t1_upgraded_chestplate": "T1 Upgraded Chestplate",
   "item.tierability.t1_upgraded_leggings": "T1 Upgraded Leggings",
@@ -75,6 +74,7 @@
   "block.tierability.jump_block_t1": "Jump Block T1",
   "block.tierability.jump_block_t2": "Jump Block T2",
   "block.tierability.tiering_block": "Tiering Block",
+  "block.tierability.flame_crystal": "Flame Crystal",
 
   "item.tierability.sword.tooltip": "After hitting a target, gives the target slowness.",
   "item.tierability.dagger.tooltip1": "Better attack speed, but less damage.",
@@ -94,6 +94,8 @@
   "tooltip.tierability.full_set_effect": "§7Full Set Effect: ",
   "tooltip.tierability.speed": "Speed",
   "tooltip.tierability.jump_boost": "Jump Boost",
+
+  "crystal.tierability.flame": "Flame Crystal",
 
   "container.tier": "Upgrade tier"
 }

@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tierability:t2_block"
+          "name": "tierability:flame_crystal"
         }
       ],
       "conditions": [

@@ -15,8 +15,9 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import ru.bclib.items.tool.BaseSwordItem;
 
-public class BaseSpearItem extends SwordItem {
+public class BaseSpearItem extends BaseSwordItem {
 
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;

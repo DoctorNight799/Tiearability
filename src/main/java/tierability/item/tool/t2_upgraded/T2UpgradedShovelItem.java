@@ -1,23 +1,17 @@
 package tierability.item.tool.t2_upgraded;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ShovelItem;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
+import tierability.item.tool.base.CustomShovelItem;
 
-import java.util.List;
-
-public class T2UpgradedShovelItem extends ShovelItem {
+public class T2UpgradedShovelItem extends CustomShovelItem {
     public T2UpgradedShovelItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
         super(material, attackDamage, attackSpeed, settings);
     }
@@ -28,11 +22,5 @@ public class T2UpgradedShovelItem extends ShovelItem {
             miner.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 160));
         }
         return super.postMine(stack, world, state, pos, miner);
-    }
-
-    @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(new TranslatableText("item.tierability.shovel.tooltip"));
-        super.appendTooltip(stack, world, tooltip, context);
     }
 }
