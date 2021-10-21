@@ -1,5 +1,6 @@
 {
-  "itemGroup.tierability.items": "Tierability предметы",
+  "itemGroup.tierability.materials": "Tierability материалы",
+  "itemGroup.tierability.artifacts": "Tierability артефакты",
   "itemGroup.tierability.tools": "Tierability инструменты",
   "itemGroup.tierability.armor": "Tierability броня",
   "itemGroup.tierability.blocks": "Tierability блоки",
@@ -49,7 +50,32 @@
   "item.tierability.t2_upgraded_leggings": "T2 улучшенные штаны",
   "item.tierability.t2_upgraded_boots": "T2 улучшенные ботинки",
 
-  "item.tierability.bottle_with_poison": "Бутылка с ядом",
+  "item.tierability.flame_shard": "Огненный осколок",
+  "item.tierability.electro_shard": "Электрический осколок",
+  "item.tierability.soul_shard": "Осколок кристалла души",
+  "item.tierability.soul_fragment": "Фрагмент души",
+  "item.tierability.soul": "Душа",
+  "item.tierability.flame_ingot": "Огненный слиток",
+  "item.tierability.electro_ingot": "Электрический слиток",
+  "item.tierability.soul_ingot": "Слиток из душ",
+
+  "item.tierability.bottle_with_poison_t1": "Бутыль с ядом T1",
+  "item.tierability.bottle_with_poison_t2": "Бутыль с ядом T2",
+  "item.tierability.bottle_with_poison_t3": "Бутыль с ядом T3",
+  "item.tierability.bottle_with_poison_t4": "Бутыль с ядом T4",
+  "item.tierability.explosion_book": "Книга взрыва",
+  "item.tierability.lightning_bolt_book": "Книга молнии",
+  "item.tierability.death_note": "Книга мгновенной смерти",
+  "item.tierability.negative_book": "Книга рандомного негативного эффекта",
+  "item.tierability.positive_book": "Книга рандомного позитивного эффекта",
+  "item.tierability.fireball_book": "Книга огненного шара",
+  "item.tierability.hook_book": "Книга заклинания крюка",
+  "item.tierability.teleport_book": "Книга телепортации",
+  "item.tierability.swap_book": "Книга заклинания смены места",
+  "item.tierability.random_book_t1": "Книга рандомных заклинаний T1",
+  "item.tierability.random_book_t2": "Книга рандомных заклинаний T2",
+  "item.tierability.soulcoll": "Собиратель душ",
+  "item.tierability.safe_amulet": "Оберег",
 
   "block.tierability.t1_ore": "T1 руда",
   "block.tierability.t2_ore": "T2 руда",
@@ -58,7 +84,9 @@
   "block.tierability.jump_block_t1": "Прыгучий блок т1",
   "block.tierability.jump_block_t2": "Прыгучий блок т2",
   "block.tierability.tiering_block": "Блок тиринга",
-  "block.tierability.flame_crystal": "Огненный Кристал",
+  "block.tierability.flame_crystal": "Огненный кристал",
+  "block.tierability.electro_crystal": "Электрический кристал",
+  "block.tierability.soul_crystal": "Кристал душ",
 
   "item.tierability.sword.tooltip": "После удара дает цели замедление.",
   "item.tierability.dagger.tooltip1": "Больше скорость, но меньше урона.",
@@ -74,12 +102,16 @@
   "item.tierability.shovel.tooltip": "После разрушения блока дает спешку.",
   "item.tierability.hoe.tooltip": "После использования дает сытость",
   "item.tierability.hammer.tooltip": "Материал для блока тиринга",
+  "item.tierability.soulcoll.tooltip1": "Меч, собирающий души, чтобы стать сильнее",
+  "item.tierability.soulcoll.tooltip2": "Этот меч получает +1 к урону каждые 100 душ пока не достигнет 1000.",
 
   "tooltip.tierability.full_set_effect": "§7Эффект полного сета: ",
   "tooltip.tierability.speed": "Скорость",
   "tooltip.tierability.jump_boost": "Прыжок",
 
-  "crystal.tierability.flame": "Огненный кристал",
+  "crystal.tierability.flame": "§cКристал наполненый огнем",
+  "crystal.tierability.electro": "§eКристал наполненый электричеством",
+  "crystal.tierability.soul": "§3Кристал наполненый душами",
 
   "container.tier": "Улучшить тир"
 }

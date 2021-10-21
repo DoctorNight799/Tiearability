@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "tierability:block/soul_crystal",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "tierability:block/soul_crystal",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tierability:block/soul_crystal",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "tierability:block/soul_crystal",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "tierability:block/soul_crystal"
+    },
+    "facing=west": {
+      "model": "tierability:block/soul_crystal",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

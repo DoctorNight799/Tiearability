@@ -16,7 +16,6 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import tierability.TierabilityMod;
 import tierability.block.TierabilityBlocks;
-import tierability.item.base.TierableItem;
 
 import java.util.stream.Stream;
 

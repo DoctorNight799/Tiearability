@@ -1,14 +1,20 @@
 package tierability.item;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
-import tierability.item.base.TierableItem;
+import tierability.item.base.BasedItem;
 
-public class BottleWithPoisonItem extends TierableItem {
+public class BottleWithPoisonItem extends BasedItem {
 
-    public BottleWithPoisonItem(Settings settings) {
-        super(settings);
+    public final int duration;
+    public final int amplifier;
+    public BottleWithPoisonItem(Settings settings, int duration, int amplifier) {
+        super(settings.maxCount(1));
+        this.duration = duration;
+        this.amplifier = amplifier;
     }
 
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        return true;
+    }
 }

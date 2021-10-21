@@ -34,11 +34,9 @@
     "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16",
-    "reach-entity-attributes": ">=2.1.1"
-  },
-
-  "suggests": {
-    "bclib": "*"
+    "reach-entity-attributes": ">=2.1.1",
+    "bclib": ">=0.3.1",
+    "trinkets": ">=3.0.4"
   },
 
   "accessWidener": "tierability.accesswidener"

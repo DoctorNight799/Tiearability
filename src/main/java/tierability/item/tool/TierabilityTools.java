@@ -1,12 +1,13 @@
 package tierability.item.tool;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import tierability.TierabilityMod;
+import tierability.item.tool.soulcollector.SoulMaterial;
+import tierability.item.tool.soulcollector.SoulcollectorSwordItem;
 import tierability.item.tool.t1.*;
 import tierability.item.tool.t1_2.T1_2HammerItem;
 import tierability.item.tool.t1_2.T1_2Material;
@@ -57,6 +58,8 @@ public class TierabilityTools {
     public static final ToolItem T2_UPGRADED_SHOVEL = add("t2_upgraded_shovel", new T1ShovelItem(T1UpgradedMaterial.T1_UPGRADED_MATERIAL, -1.5f, -2.7f, settings()));
     public static final ToolItem T2_UPGRADED_HOE = add("t2_upgraded_hoe", new T1UpgradedHoeItem(T1UpgradedMaterial.T1_UPGRADED_MATERIAL, -6, 0.3f, settings()));
 
+    public static final ToolItem SOULCOLLECTOR = add("soulcoll", new SoulcollectorSwordItem(SoulMaterial.SOUL_MATERIAL, 0, -2.3f, artSettings().maxCount(1)));
+
     private static <I extends ToolItem> I add(String name, I item) {
         TOOLITEMS.put(new Identifier(TierabilityMod.MODID, name), item);
         return item;
@@ -64,6 +67,10 @@ public class TierabilityTools {
 
     private static FabricItemSettings settings(){
         return new FabricItemSettings().group(TierabilityMod.ITEM_GROUP_TOOLS);
+    }
+
+    private static FabricItemSettings artSettings(){
+        return new FabricItemSettings().group(TierabilityMod.ITEM_GROUP_ARTIFACTS);
     }
 
     public static void register(){

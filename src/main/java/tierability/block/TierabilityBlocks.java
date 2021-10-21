@@ -26,7 +26,9 @@ public class TierabilityBlocks {
     public static final Block JUMPING_BLOCK_T1 = add("jump_block_t1", new JumpBlock( 2, 2));
     public static final Block JUMPING_BLOCK_T2 = add("jump_block_t2", new JumpBlock(2, 3));
     public static final Block CRAFTING_TIER_BLOCK = add("tiering_block", new CraftingTierBlock( 2));
-    public static final Block FLAME_CRYSTAL = add("flame_crystal", new FlameCrystal("flame"));
+    public static final Block FLAME_CRYSTAL = add("flame_crystal", new FlameCrystal(2, 4.0f, 6.0f, "flame"));
+    public static final Block ELECTRO_CRYSTAL = add("electro_crystal", new ElectroCrystal(2, 4.0f, 8.0f, "electro"));
+    public static final Block SOUL_CRYSTAL = add("soul_crystal", new SoulCrystal(2, 6.0f, 6.0f, "soul"));
 
 
     private static <B extends Block> B add(String name, B block) {

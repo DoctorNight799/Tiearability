@@ -1,5 +1,6 @@
 {
-  "itemGroup.tierability.items": "Tierability Items",
+  "itemGroup.tierability.materials": "Tierability Materials",
+  "itemGroup.tierability.artifacts": "Tierability Artifacts",
   "itemGroup.tierability.tools": "Tierability Tools",
   "itemGroup.tierability.armor": "Tierability Armor",
   "itemGroup.tierability.blocks": "Tierability Blocks",
@@ -65,7 +66,32 @@
   "item.tierability.t2_upgraded_leggings": "T2 Upgraded Leggings",
   "item.tierability.t2_upgraded_boots": "T2 Upgraded Boots",
 
-  "item.tierability.bottle_with_poison": "Bottle With Poison",
+  "item.tierability.flame_shard": "Flame Shard",
+  "item.tierability.electro_shard": "Electro Shard",
+  "item.tierability.soul_shard": "Soul Shard",
+  "item.tierability.soul_fragment": "Soul Fragment",
+  "item.tierability.soul": "Soul",
+  "item.tierability.flame_ingot": "Flame Ingot",
+  "item.tierability.electro_ingot": "Electro Ingot",
+  "item.tierability.soul_ingot": "Ingot of Souls",
+
+  "item.tierability.bottle_with_poison_t1": "Bottle With Poison T1",
+  "item.tierability.bottle_with_poison_t2": "Bottle With Poison T2",
+  "item.tierability.bottle_with_poison_t3": "Bottle With Poison T3",
+  "item.tierability.bottle_with_poison_t4": "Bottle With Poison T4",
+  "item.tierability.explosion_book": "Explosion Spell Book",
+  "item.tierability.lightning_bolt_book": "Lightning Bolt Spell Book",
+  "item.tierability.death_note": "Insta Kill Spell Book",
+  "item.tierability.negative_book": "Random Negative Effect Spell Book",
+  "item.tierability.positive_book": "Random Positive Effect Spell Book",
+  "item.tierability.fireball_book": "Fireball Spell Book",
+  "item.tierability.hook_book": "Hook Spell Book",
+  "item.tierability.teleport_book": "Teleport Spell Book",
+  "item.tierability.swap_book": "Swap Spell Book",
+  "item.tierability.random_book_t1": "Random Spell Book T1",
+  "item.tierability.random_book_t2": "Random Spell Book T2",
+  "item.tierability.soulcoll": "SoulCollector",
+  "item.tierability.safe_amulet": "Safe Amulet",
 
   "block.tierability.t1_ore": "T1 Ore",
   "block.tierability.t2_ore": "T2 Ore",
@@ -75,6 +101,8 @@
   "block.tierability.jump_block_t2": "Jump Block T2",
   "block.tierability.tiering_block": "Tiering Block",
   "block.tierability.flame_crystal": "Flame Crystal",
+  "block.tierability.electro_crystal": "Electro Crystal",
+  "block.tierability.soul_crystal": "Soul Crystal",
 
   "item.tierability.sword.tooltip": "After hitting a target, gives the target slowness.",
   "item.tierability.dagger.tooltip1": "Better attack speed, but less damage.",
@@ -89,13 +117,17 @@
   "item.tierability.axe.tooltip2": "After breaking a block, gives you haste.",
   "item.tierability.shovel.tooltip": "After breaking a block, gives you haste.",
   "item.tierability.hoe.tooltip": "Upon use, gives you saturation.",
-  "item.tierability.hammer.tooltip": "Material for tiering block",
+  "item.tierability.hammer.tooltip": "Material for tiering block.",
+  "item.tierability.soulcoll.tooltip1": "Sword that collects souls to become stronger.",
+  "item.tierability.soulcoll.tooltip2": "This sword gets +1 damage every 100 souls until it gets 1000.",
 
   "tooltip.tierability.full_set_effect": "§7Full Set Effect: ",
   "tooltip.tierability.speed": "Speed",
   "tooltip.tierability.jump_boost": "Jump Boost",
 
-  "crystal.tierability.flame": "Flame Crystal",
+  "crystal.tierability.flame": "§cCrystal filled with fire",
+  "crystal.tierability.electro": "§eCrystal filled with thunder",
+  "crystal.tierability.soul": "§3Crystal filled with souls",
 
   "container.tier": "Upgrade tier"
 }

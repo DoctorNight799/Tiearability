@@ -22,11 +22,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.*;
 
-public class CrystalBasedBlock extends AmethystClusterBlock {
+public class BasedCrystalBlock extends AmethystClusterBlock {
 
     private final String type;
 
-    public CrystalBasedBlock(Settings settings, String type) {
+    public BasedCrystalBlock(Settings settings, String type) {
         super(0, 0, settings.nonOpaque());
         this.NORTH_SHAPE = createCuboidShape(3, 3, 9, 13, 13, 16);
         this.SOUTH_SHAPE = createCuboidShape(3, 3, 0, 13, 13, 7);

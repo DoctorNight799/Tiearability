@@ -7,7 +7,6 @@
     "item": "minecraft:spider_eye"
   },
   "result": {
-    "item": "tierability:bottle_with_poison",
-    "tier": 1
+    "item": "tierability:bottle_with_poison_t1"
   }
 }

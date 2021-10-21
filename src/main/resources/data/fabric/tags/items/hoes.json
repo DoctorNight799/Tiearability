@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "tierability:t1_hoe",
-    "tierability:t2_hoe"
+    "tierability:t2_hoe",
+    "tierability:t1_upgraded_hoe",
+    "tierability:t2_upgraded_hoe"
   ]
 }

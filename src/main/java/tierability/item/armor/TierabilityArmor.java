@@ -1,5 +1,6 @@
 package tierability.item.armor;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
@@ -7,10 +8,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import tierability.TierabilityMod;
 import tierability.api.armor.ArmorEffectRegistry;
+import tierability.item.AmuletItem;
 import tierability.item.base.BaseArmorItem;
-
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class TierabilityArmor {
 

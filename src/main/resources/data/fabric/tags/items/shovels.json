@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "tierability:t1_shovel",
-    "tierability:t2_shovel"
+    "tierability:t2_shovel",
+    "tierability:t1_upgraded_shovel",
+    "tierability:t2_upgraded_shovel"
   ]
 }

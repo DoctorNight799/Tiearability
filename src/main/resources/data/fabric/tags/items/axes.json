@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "tierability:t1_axe",
-    "tierability:t2_axe"
+    "tierability:t2_axe",
+    "tierability:t1_upgraded_axe",
+    "tierability:t2_upgraded_axe"
   ]
 }

@@ -25,11 +25,14 @@ public class TierabilityMod implements ModInitializer {
 
 	public static final String MODID = "tierability";
 
-	public static final ItemGroup ITEM_GROUP_ITEMS = FabricItemGroupBuilder.build(
-			new Identifier(MODID, "items"),
+	public static final ItemGroup ITEM_GROUP_MATERIALS = FabricItemGroupBuilder.build(
+			new Identifier(MODID, "materials"),
 			() -> new ItemStack(TierabilityItems.T1_INGOT));
+	public static final ItemGroup ITEM_GROUP_ARTIFACTS = FabricItemGroupBuilder.build(
+			new Identifier(MODID, "artifacts"),
+			() -> new ItemStack(TierabilityItems.POSITIVE_EFFECT_SPELL_BOOK));
 	public static final ItemGroup ITEM_GROUP_TOOLS = FabricItemGroupBuilder.build(
-			new Identifier(MODID, "items"),
+			new Identifier(MODID, "tools"),
 			() -> new ItemStack(TierabilityTools.T1_SWORD));
 	public static final ItemGroup ITEM_GROUP_ARMOR = FabricItemGroupBuilder.build(
 			new Identifier(MODID, "armor"),
@@ -58,4 +61,7 @@ public class TierabilityMod implements ModInitializer {
 		ScreenRegistry.register(TIER_UPGRADE, TierCraftingScreen::new);
 	}
 
+	public static Identifier newId(String path){
+		return new Identifier(MODID, path);
+	}
 }

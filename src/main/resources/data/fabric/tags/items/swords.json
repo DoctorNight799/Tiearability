@@ -6,6 +6,12 @@
     "tierability:t1_spear",
     "tierability:t2_sword",
     "tierability:t2_dagger",
-    "tierability:t2_spear"
+    "tierability:t2_spear",
+    "tierability:t1_upgraded_sword",
+    "tierability:t1_upgraded_dagger",
+    "tierability:t1_upgraded_spear",
+    "tierability:t2_upgraded_sword",
+    "tierability:t2_upgraded_dagger",
+    "tierability:t2_upgraded_spear"
   ]
 }
