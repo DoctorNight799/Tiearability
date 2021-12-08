@@ -10,6 +10,7 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import tierability.item.tool.base.CustomPickaxeItem;
+import tierability.util.EffectsUtils;
 
 public class T1UpgradedPickaxeItem extends CustomPickaxeItem {
     public T1UpgradedPickaxeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
@@ -18,8 +19,8 @@ public class T1UpgradedPickaxeItem extends CustomPickaxeItem {
 
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
-        if(miner instanceof PlayerEntity player) {
-            miner.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 155));
+        if(miner instanceof PlayerEntity) {
+            EffectsUtils.add(miner, StatusEffects.HASTE, 5*20, 155);
         }
         return super.postMine(stack, world, state, pos, miner);
     }

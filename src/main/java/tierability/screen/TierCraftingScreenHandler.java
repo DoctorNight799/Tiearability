@@ -42,9 +42,7 @@ public class TierCraftingScreenHandler extends ForgingScreenHandler {
         this.output.unlockLastRecipe(player);
         this.decrementStack(0);
         this.decrementStack(1);
-        this.context.run((world, pos) -> {
-            world.syncWorldEvent(1044, pos, 0);
-        });
+        this.context.run((world, pos) -> world.syncWorldEvent(1044, pos, 0));
     }
 
     private void decrementStack(int slot) {
@@ -58,7 +56,7 @@ public class TierCraftingScreenHandler extends ForgingScreenHandler {
         if (list.isEmpty()) {
             this.output.setStack(0, ItemStack.EMPTY);
         } else {
-            this.currentRecipe = (TierRecipe)list.get(0);
+            this.currentRecipe = list.get(0);
             ItemStack itemStack = this.currentRecipe.craft(this.input);
             this.output.setLastRecipe(this.currentRecipe);
             this.output.setStack(0, itemStack);
@@ -67,9 +65,7 @@ public class TierCraftingScreenHandler extends ForgingScreenHandler {
     }
 
     protected boolean isUsableAsAddition(ItemStack stack) {
-        return this.recipes.stream().anyMatch((recipe) -> {
-            return recipe.testAddition(stack);
-        });
+        return this.recipes.stream().anyMatch((recipe) -> recipe.testAddition(stack));
     }
 
     public boolean canInsertIntoSlot(ItemStack stack, Slot slot) {

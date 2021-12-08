@@ -118,7 +118,7 @@ public class Spells {
 
             for(int i = 0; i < 16; ++i) {
                 double g = target.getX() + (target.getRandom().nextDouble() - 0.5D) * 16.0D;
-                double h = MathHelper.clamp(target.getY() + (double)(target.getRandom().nextInt(16) - 8), world.getBottomY(), (world.getBottomY() + (world).getLogicalHeight() - 1));
+                double h = MathHelper.clamp(target.getY() + (double)(target.getRandom().nextInt(16) - 8), world.getBottomY(), (world.getBottomY() + (world).getHeight() - 1));
                 double j = target.getZ() + (target.getRandom().nextDouble() - 0.5D) * 16.0D;
                 if (target.hasVehicle()) {
                     target.stopRiding();

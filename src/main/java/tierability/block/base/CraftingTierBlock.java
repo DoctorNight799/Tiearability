@@ -29,6 +29,7 @@ import ru.bclib.client.models.PatternsHelper;
 import ru.bclib.interfaces.BlockModelProvider;
 import tierability.screen.TierCraftingScreenHandler;
 
+import java.io.Serial;
 import java.util.HashMap;
 import java.util.Optional;
 
@@ -41,9 +42,7 @@ public class CraftingTierBlock extends Block implements BlockModelProvider {
     }
 
     public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> {
-            return new TierCraftingScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos));
-        }, SCREEN_TITLE);
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new TierCraftingScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), SCREEN_TITLE);
     }
 
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
@@ -67,6 +66,7 @@ public class CraftingTierBlock extends Block implements BlockModelProvider {
     public @Nullable JsonUnbakedModel getBlockModel(Identifier blockId, BlockState blockState) {
         String blockName = blockId.getPath();
         Optional<String> pattern = PatternsHelper.createJson(BasePatterns.BLOCK_SIDED, new HashMap<String, String>() {
+            @Serial
             private static final long serialVersionUID = 1L;
 
             {

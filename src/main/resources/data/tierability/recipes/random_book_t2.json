@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZXC",
+    "V#"
+  ],
+  "key": {
+    "Z": {
+      "item": "tierability:fireball_book"
+    },
+    "X": {
+      "item": "tierability:lightning_bolt_book"
+    },
+    "C": {
+      "item": "tierability:negative_book"
+    },
+    "V": {
+      "item": "tierability:positive_book"
+    },
+    "#": {
+      "item": "tierability:random_book_t1"
+    }
+  },
+  "result": {
+    "item": "tierability:random_book_t2"
+  }
+}

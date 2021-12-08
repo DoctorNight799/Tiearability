@@ -16,6 +16,7 @@ import net.minecraft.util.BlockMirror;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
 import org.jetbrains.annotations.Nullable;
@@ -27,13 +28,7 @@ public class BasedCrystalBlock extends AmethystClusterBlock {
     private final String type;
 
     public BasedCrystalBlock(Settings settings, String type) {
-        super(0, 0, settings.nonOpaque());
-        this.NORTH_SHAPE = createCuboidShape(3, 3, 9, 13, 13, 16);
-        this.SOUTH_SHAPE = createCuboidShape(3, 3, 0, 13, 13, 7);
-        this.EAST_SHAPE = createCuboidShape(0, 3, 3, 7, 13, 13);
-        this.WEST_SHAPE = createCuboidShape(9, 3, 3, 16, 13, 13);
-        this.UP_SHAPE = createCuboidShape(3, 0, 3, 13, 7, 13);
-        this.DOWN_SHAPE = createCuboidShape(3, 9, 3, 13, 16, 13);
+        super(7, 3, settings.nonOpaque());
         this.type = type;
     }
 

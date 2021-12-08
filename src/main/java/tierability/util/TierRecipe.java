@@ -75,9 +75,7 @@ public class TierRecipe implements Recipe<Inventory> {
     }
 
     public boolean isEmpty() {
-        return Stream.of(this.base, this.addition).anyMatch((ingredient) -> {
-            return ingredient.getMatchingStacks().length == 0;
-        });
+        return Stream.of(this.base, this.addition).anyMatch((ingredient) -> ingredient.getMatchingStacks().length == 0);
     }
 
     public static class Serializer implements RecipeSerializer<TierRecipe> {
@@ -85,9 +83,7 @@ public class TierRecipe implements Recipe<Inventory> {
         }
         public static Item getItem(JsonObject json) {
             String string = JsonHelper.getString(json, "item");
-            Item item = (Item) Registry.ITEM.getOrEmpty(new Identifier(string)).orElseThrow(() -> {
-                return new JsonSyntaxException("Unknown item '" + string + "'");
-            });
+            Item item = Registry.ITEM.getOrEmpty(new Identifier(string)).orElseThrow(() -> new JsonSyntaxException("Unknown item '" + string + "'"));
             if (item == Items.AIR) {
                 throw new JsonSyntaxException("Invalid item: " + string);
             } else {

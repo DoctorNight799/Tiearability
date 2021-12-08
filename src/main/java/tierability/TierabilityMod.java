@@ -12,6 +12,8 @@ import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import tierability.block.TierabilityBlocks;
+import tierability.data.TierabilityLootTables;
+import tierability.effect.TierabilityEffects;
 import tierability.event.TierabilityEvents;
 import tierability.item.TierabilityItems;
 import tierability.item.armor.TierabilityArmor;
@@ -56,8 +58,10 @@ public class TierabilityMod implements ModInitializer {
 		TierabilityTools.register();
 		TierabilityArmor.register();
 		TierabilityBlocks.register();
+		TierabilityEffects.register();
 		TierabilityEvents.register();
 		TierabilityConfiguredFeature.register();
+		TierabilityLootTables.register();
 		ScreenRegistry.register(TIER_UPGRADE, TierCraftingScreen::new);
 	}
 

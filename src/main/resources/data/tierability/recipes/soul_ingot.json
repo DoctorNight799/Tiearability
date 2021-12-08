@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "tierability:t1_ingot"
+    },
+    "X": {
+      "item": "tierability:soul"
+    }
+  },
+  "result": {
+    "item": "tierability:soul_ingot"
+  }
+}

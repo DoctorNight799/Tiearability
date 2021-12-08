@@ -1,11 +1,8 @@
 package tierability.block;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import tierability.TierabilityMod;
@@ -14,6 +11,7 @@ import tierability.block.base.*;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+@SuppressWarnings("unused")
 public class TierabilityBlocks {
 
     public static final Map<Identifier, BlockItem> ITEMS = new LinkedHashMap<>();
@@ -35,10 +33,6 @@ public class TierabilityBlocks {
         Item.Settings settings = new Item.Settings();
         settings.group(TierabilityMod.ITEM_GROUP_BLOCKS);
         return addBlockItem(name, block, new BlockItem(block, settings));
-    }
-
-    private static FabricBlockSettings copyOf(Block block){
-        return FabricBlockSettings.copyOf(block);
     }
 
     private static <B extends Block> B addBlockItem(String name, B block, BlockItem item) {

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZX",
+    "C#"
+  ],
+  "key": {
+    "Z": {
+      "item": "tierability:hook_book"
+    },
+    "X": {
+      "item": "tierability:teleport_book"
+    },
+    "C": {
+      "item": "tierability:swap_book"
+    },
+    "#": {
+      "item": "tierability:explosion_book"
+    }
+  },
+  "result": {
+    "item": "tierability:random_book_t1"
+  }
+}

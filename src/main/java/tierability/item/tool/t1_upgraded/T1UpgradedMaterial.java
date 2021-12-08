@@ -10,7 +10,7 @@ public class T1UpgradedMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 554;
+        return 754;
     }
 
     @Override
