@@ -1,9 +1,11 @@
-# Fabric Example Mod
+<div align="center">
+<img alt="Icon" src="src/main/resources/assets/tierability/icon.png" width="128">
 
-## Setup
+[![img](http://cf.way2muchnoise.eu/versions/tierability_latest.svg)](https://www.curseforge.com/minecraft/mc-mods/tierability)
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+[Discord](https://discord.gg/DcemWeskeZ), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/tierability)
+# Tierability
+</div>
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## About
+Tierability is a minecraft mod that adds new content. You can find new ore with different tier. Tools, armor, some blocks and some artifacts can be upgraded on special table. You can add a special effect to you tools and armor or just increase their efficiency.

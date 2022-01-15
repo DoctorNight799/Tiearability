@@ -11,14 +11,13 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-	//maven { url "https://jitpack.io" } //bclib
+	maven { url "https://jitpack.io" } //bclib
 	maven { url "https://maven.shedaniel.me" } //rei
 	maven { url "https://maven.gegy.dev" } //databreaker
 	maven { url "https://ladysnake.jfrog.io/artifactory/mods" } //CCA
 	maven { url "https://maven.terraformersmc.com" } //modmenu, trinkets
 	maven { url "https://maven.jamieswhiteshirt.com/libs-release" } //reach entity attributes
 	maven { url "https://maven.pinkgoosik.ru" }
-	maven { url "https://cursemaven.com"}
 }
 
 dependencies {
@@ -30,14 +29,11 @@ dependencies {
 
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_version}")
 	modImplementation "dev.emi:trinkets:${trinkets_version}"
-	//modImplementation "com.github.paulevsGitch:bclib:${project.bclib_version}"
-	modImplementation "ru.pinkgoosik:cosmetica:0.3.2-1.17.1-fabric"
-	include "ru.pinkgoosik:cosmetica:0.3.2-1.17.1-fabric"
+	modImplementation "com.github.paulevsGitch:BCLib:${project.bclib_version}"
+	include modImplementation("ru.pinkgoosik:cosmetica:0.3.2-1.17.1-fabric")
 
-	modImplementation "curse.maven:bclib-495191:3548701"
-
-	modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:7.0.343"
-	modRuntime "com.terraformersmc:modmenu:3.0.0"
+	modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:7.1.357"
+	modRuntime "com.terraformersmc:modmenu:3.0.1"
 	modRuntime "supercoder79:databreaker:0.2.8"
 }
 
