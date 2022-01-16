@@ -3,7 +3,7 @@
 
 [![img](http://cf.way2muchnoise.eu/versions/tierability_latest.svg)](https://www.curseforge.com/minecraft/mc-mods/tierability)
 
-[Discord](https://discord.gg/DcemWeskeZ), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/tierability)
+[Discord](https://discord.gg/DcemWeskeZ), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/tierability), [Modrinth](https://modrinth.com/mod/tierability)
 # Tierability
 </div>
 
