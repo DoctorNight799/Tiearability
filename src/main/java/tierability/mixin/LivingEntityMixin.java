@@ -78,22 +78,6 @@ public abstract class LivingEntityMixin {
                     }
                     ((ServerWorld) entity.world).spawnParticles(ParticleTypes.SOUL, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
                 }
-                if (attacker.getStackInHand(Hand.MAIN_HAND).isOf(TierabilityTools.T1_ELECTRO_SWORD)) {
-                    if (!entity.world.isClient)
-                        ((ServerWorld) entity.world).spawnParticles(TierabilityParticles.ELECTRO_PARTICLE, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
-                }
-                if (attacker.getStackInHand(Hand.MAIN_HAND).isOf(TierabilityTools.T2_ELECTRO_SWORD)) {
-                    if (!entity.world.isClient)
-                        ((ServerWorld) entity.world).spawnParticles(TierabilityParticles.ELECTRO_PARTICLE, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
-                }
-                if (attacker.getStackInHand(Hand.MAIN_HAND).isOf(TierabilityTools.T1_FLAME_SWORD)) {
-                    if (!entity.world.isClient)
-                        ((ServerWorld) entity.world).spawnParticles(ParticleTypes.FLAME, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
-                }
-                if (attacker.getStackInHand(Hand.MAIN_HAND).isOf(TierabilityTools.T2_FLAME_SWORD)) {
-                    if (!entity.world.isClient)
-                        ((ServerWorld) entity.world).spawnParticles(ParticleTypes.FLAME, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
-                }
             }
         }
     }
