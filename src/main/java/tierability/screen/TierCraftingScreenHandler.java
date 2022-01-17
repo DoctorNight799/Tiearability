@@ -9,6 +9,7 @@ import net.minecraft.screen.slot.Slot;
 import net.minecraft.world.World;
 import tierability.TierabilityMod;
 import tierability.block.TierabilityBlocks;
+import tierability.client.TierabilityClient;
 import tierability.util.TierRecipe;
 
 
@@ -24,7 +25,7 @@ public class TierCraftingScreenHandler extends ForgingScreenHandler {
     }
 
     public TierCraftingScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
-        super(TierabilityMod.TIER_UPGRADE, syncId, playerInventory, context);
+        super(TierabilityClient.TIER_UPGRADE, syncId, playerInventory, context);
         this.world = playerInventory.player.world;
         this.recipes = this.world.getRecipeManager().listAllOfType(TierabilityMod.TIER_RECIPE);
     }
