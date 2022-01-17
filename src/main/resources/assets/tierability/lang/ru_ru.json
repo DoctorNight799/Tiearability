@@ -7,6 +7,7 @@
 
   "item.tierability.t1_shard": "T1 осколок",
   "item.tierability.t1_ingot": "T1 слиток",
+  "item.tierability.t1_orb": "T1 Сфера",
 
   "item.tierability.t1_sword": "T1 меч",
   "item.tierability.t1_dagger": "T1 кинжал",
@@ -24,6 +25,7 @@
   "item.tierability.t2_shard": "T2 осколок",
   "item.tierability.t2_powder": "T2 пыль",
   "item.tierability.t2_ingot": "T2 слиток",
+  "item.tierability.t2_orb": "T2 Сфера",
 
   "item.tierability.t2_sword": "T2 меч",
   "item.tierability.t2_dagger": "T2 кинжал",
@@ -40,15 +42,33 @@
 
   "item.tierability.t1_2_hammer": "T1-2 молоток",
 
+  "item.tierability.t3_orb": "T3 Сфера",
+
   "item.tierability.t1_upgraded_helmet": "T1 улучшенный шлем",
   "item.tierability.t1_upgraded_chestplate": "T1 улучшенный нагрудник",
   "item.tierability.t1_upgraded_leggings": "T1 улучшенные штаны",
   "item.tierability.t1_upgraded_boots": "T1 улучшенные ботинки",
 
+  "item.tierability.t1_upgraded_sword": "T1 улучшенный меч",
+  "item.tierability.t1_upgraded_dagger": "T1 улучшенный кинжал",
+  "item.tierability.t1_upgraded_spear": "T1 улучшенные копье",
+  "item.tierability.t1_upgraded_pickaxe": "T1 улучшенные кирка",
+  "item.tierability.t1_upgraded_axe": "T1 улучшенные топор",
+  "item.tierability.t1_upgraded_shovel": "T1 улучшенные лопата",
+  "item.tierability.t1_upgraded_hoe": "T1 улучшенные мотыга",
+
   "item.tierability.t2_upgraded_helmet": "T2 улучшенный шлем",
   "item.tierability.t2_upgraded_chestplate": "T2 улучшенный нагрудник",
   "item.tierability.t2_upgraded_leggings": "T2 улучшенные штаны",
   "item.tierability.t2_upgraded_boots": "T2 улучшенные ботинки",
+
+  "item.tierability.t2_upgraded_sword": "T2 улучшенный меч",
+  "item.tierability.t2_upgraded_dagger": "T2 улучшенный кинжал",
+  "item.tierability.t2_upgraded_spear": "T2 улучшенные копье",
+  "item.tierability.t2_upgraded_pickaxe": "T2 улучшенные кирка",
+  "item.tierability.t2_upgraded_axe": "T2 улучшенные топор",
+  "item.tierability.t2_upgraded_shovel": "T2 улучшенные лопата",
+  "item.tierability.t2_upgraded_hoe": "T2 улучшенные мотыга",
 
   "item.tierability.t1_electro_sword": "T1 электро меч",
   "item.tierability.t1_electro_dagger": "T1 электро кинжал",
@@ -167,7 +187,7 @@
   "tooltip.tierability.full_set_effect": "§7Эффект полного сета: ",
   "tooltip.tierability.speed": "Скорость",
   "tooltip.tierability.jump_boost": "Прыжок",
-  "tooltip.tierability.electric_field": "Электро поле",
+  "tooltip.tierability.electric_field_effect": "Электро поле",
   "tooltip.tierability.fire_resist": "Огнеустойчивость",
 
   "crystal.tierability.flame": "§cКристал наполненый огнем",

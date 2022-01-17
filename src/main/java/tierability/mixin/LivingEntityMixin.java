@@ -15,6 +15,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import tierability.client.particles.TierabilityParticles;
 import tierability.effect.TierabilityEffects;
 import tierability.item.AmuletItem;
 import tierability.item.BottleWithPoisonItem;
@@ -66,16 +67,32 @@ public abstract class LivingEntityMixin {
     }
 
     @Inject(method="onDeath", at = @At("TAIL"))
-    void onDeath(DamageSource source, CallbackInfo ci){
-        if(source.getAttacker() instanceof LivingEntity attacker){
-            if(attacker.getStackInHand(Hand.MAIN_HAND).isOf(TierabilityTools.SOULCOLLECTOR)) {
+    void onDeath(DamageSource source, CallbackInfo ci) {
+        if (source.getAttacker() instanceof LivingEntity attacker) {
+            if (attacker.getStackInHand(Hand.MAIN_HAND).isOf(TierabilityTools.SOULCOLLECTOR)) {
                 if (!entity.world.isClient) {
                     ItemStack attackerStack = attacker.getStackInHand(Hand.MAIN_HAND);
                     int killCount = SoulcollectorSwordItem.getKillCount(attackerStack);
-                    if(!(killCount == 1000)){
+                    if (!(killCount == 1000)) {
                         SoulcollectorSwordItem.setKillCount(attackerStack, killCount + 1);
                     }
-                    ((ServerWorld)entity.world).spawnParticles(ParticleTypes.SOUL, entity.getX(), entity.getY()+1, entity.getZ(), 1, 0,0,0, 0);
+                    ((ServerWorld) entity.world).spawnParticles(ParticleTypes.SOUL, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
+                }
+                if (attacker.getStackInHand(Hand.MAIN_HAND).isOf(TierabilityTools.T1_ELECTRO_SWORD)) {
+                    if (!entity.world.isClient)
+                        ((ServerWorld) entity.world).spawnParticles(TierabilityParticles.ELECTRO_PARTICLE, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
+                }
+                if (attacker.getStackInHand(Hand.MAIN_HAND).isOf(TierabilityTools.T2_ELECTRO_SWORD)) {
+                    if (!entity.world.isClient)
+                        ((ServerWorld) entity.world).spawnParticles(TierabilityParticles.ELECTRO_PARTICLE, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
+                }
+                if (attacker.getStackInHand(Hand.MAIN_HAND).isOf(TierabilityTools.T1_FLAME_SWORD)) {
+                    if (!entity.world.isClient)
+                        ((ServerWorld) entity.world).spawnParticles(ParticleTypes.FLAME, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
+                }
+                if (attacker.getStackInHand(Hand.MAIN_HAND).isOf(TierabilityTools.T2_FLAME_SWORD)) {
+                    if (!entity.world.isClient)
+                        ((ServerWorld) entity.world).spawnParticles(ParticleTypes.FLAME, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
                 }
             }
         }

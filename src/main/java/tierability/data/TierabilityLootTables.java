@@ -43,6 +43,9 @@ public class TierabilityLootTables {
             overworldChest(TierabilityItems.HOOK_SPELL_BOOK, 0.6F);
             overworldChest(TierabilityItems.EXPLOSION_SPELL_BOOK, 0.4F);
             overworldChest(TierabilityItems.TELEPORT_SPELL_BOOK, 0.02F);
+            overworldChest(TierabilityItems.T1_ORB, 0.01F);
+            overworldChest(TierabilityItems.T2_ORB, 0.01F);
+            overworldChest(TierabilityItems.T3_ORB, 0.01F);
         });
     }
 

@@ -7,6 +7,7 @@
 
   "item.tierability.t1_shard": "T1 Shard",
   "item.tierability.t1_ingot": "T1 Ingot",
+  "item.tierability.t1_orb": "T1 Orb",
 
   "item.tierability.t1_sword": "T1 Sword",
   "item.tierability.t1_dagger": "T1 Dagger",
@@ -24,6 +25,7 @@
   "item.tierability.t2_shard": "T2 Shard",
   "item.tierability.t2_powder": "T2 Powder",
   "item.tierability.t2_ingot": "T2 Ingot",
+  "item.tierability.t2_orb": "T2 Orb",
 
   "item.tierability.t2_sword": "T2 Sword",
   "item.tierability.t2_dagger": "T2 Dagger",
@@ -39,6 +41,8 @@
   "item.tierability.t2_boots": "T2 Boots",
 
   "item.tierability.t1_2_hammer": "T1-2 Hammer",
+
+  "item.tierability.t3_orb": "T3 Orb",
 
   "item.tierability.t1_upgraded_sword": "T1 Upgraded Sword",
   "item.tierability.t1_upgraded_dagger": "T1 Upgraded Dagger",
@@ -183,7 +187,7 @@
   "tooltip.tierability.full_set_effect": "§7Full Set Effect: ",
   "tooltip.tierability.speed": "Speed",
   "tooltip.tierability.jump_boost": "Jump Boost",
-  "tooltip.tierability.electric_field": "Electric Field",
+  "tooltip.tierability.electric_field_effect": "Electric Field",
   "tooltip.tierability.fire_resist": "Fire Resistance",
 
   "crystal.tierability.flame": "§cCrystal filled with fire",

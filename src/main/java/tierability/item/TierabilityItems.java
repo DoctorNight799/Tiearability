@@ -20,9 +20,12 @@ public class TierabilityItems {
 
     public static final Item T1_SHARD = add("t1_shard", new BasedItem(settings()));
     public static final Item T1_INGOT = add("t1_ingot", new BasedItem(settings()));
+    //public static final Item T1_ORB = add("t1_orb", new BasedItem(settings()));
     public static final Item T2_SHARD = add("t2_shard", new BasedItem(settings()));
     public static final Item T2_POWDER = add("t2_powder", new BasedItem(settings()));
     public static final Item T2_INGOT = add("t2_ingot", new BasedItem(settings()));
+    //public static final Item T2_ORB = add("t2_orb", new BasedItem(settings()));
+   // public static final Item T3_ORB = add("t3_orb", new BasedItem(settings()));
     public static final Item FLAME_SHARD = add("flame_shard", new BasedItem(settings()));
     public static final Item ELECTRO_SHARD = add("electro_shard", new BasedItem(settings()));
     public static final Item SOUL_SHARD = add("soul_shard", new BasedItem(settings()));
