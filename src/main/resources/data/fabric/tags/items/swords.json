@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "tierability:soulcoll",
+
     "tierability:t1_sword",
     "tierability:t1_dagger",
     "tierability:t1_spear",
