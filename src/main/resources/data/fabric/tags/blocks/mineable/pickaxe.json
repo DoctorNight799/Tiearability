@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "tierability:t1_ore",
+    "tierability:t2_ore",
+
+    "tierability:t1_block0",
+    "tierability:t2_block",
+
+    "tierability:jump_block_t1",
+    "tierability:jump_block_t2",
+
+    "tierability:tiering_block",
+
+    "tierability:flame_crystal",
+    "tierability:electro_crystal",
+    "tierability:soul_crystal"
+  ]
+}
