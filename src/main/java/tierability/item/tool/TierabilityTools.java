@@ -18,6 +18,8 @@ import tierability.item.tool.t2.*;
 import tierability.item.tool.t2_electro.*;
 import tierability.item.tool.t2_flame.*;
 import tierability.item.tool.t2_upgraded.*;
+import tierability.item.tool.t3.*;
+import tierability.item.tool.t3_upgraded.*;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -44,6 +46,14 @@ public class TierabilityTools {
 
     public static final ToolItem T1_2_HAMMER = add("t1_2_hammer", new T1_2HammerItem(T1_2Material.T1_2_MATERIAL, -2, -2.2f, settings()));
 
+    public static final ToolItem T3_SWORD = add("t3_sword", new T3SwordItem(T3Material.T3_MATERIAL, 0, -2.2f, settings()));
+    public static final ToolItem T3_DAGGER = add("t3_dagger", new T3DaggerItem(T3Material.T3_MATERIAL, -2, -1.5f, settings()));
+    public static final ToolItem T3_SPEAR = add("t3_spear", new T3SpearItem(T3Material.T3_MATERIAL, 1, -2.6f, 6, settings()));
+    public static final ToolItem T3_PICKAXE = add("t3_pickaxe", new T3PickaxeItem(T3Material.T3_MATERIAL, -2, -2.6f, settings()));
+    public static final ToolItem T3_AXE = add("t3_axe", new T3AxeItem(T3Material.T3_MATERIAL, 2, -2.8f, settings()));
+    public static final ToolItem T3_SHOVEL = add("t3_shovel", new T3ShovelItem(T3Material.T3_MATERIAL, -1.5f, -2.8f, settings()));
+    public static final ToolItem T3_HOE = add("t3_hoe", new T3HoeItem(T3Material.T3_MATERIAL, -7, 0.2f, settings()));
+
     public static final ToolItem T1_UPGRADED_SWORD = add("t1_upgraded_sword", new T1UpgradedSwordItem(T1UpgradedMaterial.T1_UPGRADED_MATERIAL, 0, -2.1f, settings()));
     public static final ToolItem T1_UPGRADED_DAGGER = add("t1_upgraded_dagger", new T1UpgradedDaggerItem(T1UpgradedMaterial.T1_UPGRADED_MATERIAL, -2, -1.4f, settings()));
     public static final ToolItem T1_UPGRADED_SPEAR = add("t1_upgraded_spear", new T1UpgradedSpearItem(T1UpgradedMaterial.T1_UPGRADED_MATERIAL, 1, -2.5f, 6, settings()));
@@ -59,6 +69,14 @@ public class TierabilityTools {
     public static final ToolItem T2_UPGRADED_AXE = add("t2_upgraded_axe", new T2UpgradedAxeItem(T2UpgradedMaterial.T2_UPGRADED_MATERIAL, 2, -2.7f, settings()));
     public static final ToolItem T2_UPGRADED_SHOVEL = add("t2_upgraded_shovel", new T2UpgradedShovelItem(T2UpgradedMaterial.T2_UPGRADED_MATERIAL, -1.5f, -2.7f, settings()));
     public static final ToolItem T2_UPGRADED_HOE = add("t2_upgraded_hoe", new T2UpgradedHoeItem(T2UpgradedMaterial.T2_UPGRADED_MATERIAL, -6, 0.3f, settings()));
+
+    public static final ToolItem T3_UPGRADED_SWORD = add("t3_upgraded_sword", new T3UpgradedSwordItem(T3UpgradedMaterial.T3_UPGRADED_MATERIAL, 0, -2.1f, settings()));
+    public static final ToolItem T3_UPGRADED_DAGGER = add("t3_upgraded_dagger", new T3UpgradedDaggerItem(T3UpgradedMaterial.T3_UPGRADED_MATERIAL, -2, -1.4f, settings()));
+    public static final ToolItem T3_UPGRADED_SPEAR = add("t3_upgraded_spear", new T3UpgradedSpearItem(T3UpgradedMaterial.T3_UPGRADED_MATERIAL, 1, -2.5f, 6, settings()));
+    public static final ToolItem T3_UPGRADED_PICKAXE = add("t3_upgraded_pickaxe", new T3UpgradedPickaxeItem(T3UpgradedMaterial.T3_UPGRADED_MATERIAL, -2, -2.5f, settings()));
+    public static final ToolItem T3_UPGRADED_AXE = add("t3_upgraded_axe", new T3UpgradedAxeItem(T3UpgradedMaterial.T3_UPGRADED_MATERIAL, 2, -2.7f, settings()));
+    public static final ToolItem T3_UPGRADED_SHOVEL = add("t3_upgraded_shovel", new T3UpgradedShovelItem(T3UpgradedMaterial.T3_UPGRADED_MATERIAL, -1.5f, -2.7f, settings()));
+    public static final ToolItem T3_UPGRADED_HOE = add("t3_upgraded_hoe", new T3UpgradedHoeItem(T3UpgradedMaterial.T3_UPGRADED_MATERIAL, -7, 0.3f, settings()));
 
     public static final ToolItem T1_ELECTRO_SWORD = add("t1_electro_sword", new T1ElectroSwordItem(T1ElectroMaterial.T1_ELECTRO_MATERIAL, 0, -2.1f, settings()));
     public static final ToolItem T1_ELECTRO_DAGGER = add("t1_electro_dagger", new T1ElectroDaggerItem(T1ElectroMaterial.T1_ELECTRO_MATERIAL, -2, -1.4f, settings()));
