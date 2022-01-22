@@ -10,12 +10,12 @@ public class T1FlameMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 570;
+        return 540;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 8;
+        return 8f;
     }
 
     @Override

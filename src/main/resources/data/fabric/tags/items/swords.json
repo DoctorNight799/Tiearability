@@ -4,14 +4,41 @@
     "tierability:t1_sword",
     "tierability:t1_dagger",
     "tierability:t1_spear",
+
     "tierability:t2_sword",
     "tierability:t2_dagger",
     "tierability:t2_spear",
+
+    "tierability:t3_sword",
+    "tierability:t3_dagger",
+    "tierability:t3_spear",
+
     "tierability:t1_upgraded_sword",
     "tierability:t1_upgraded_dagger",
     "tierability:t1_upgraded_spear",
+
     "tierability:t2_upgraded_sword",
     "tierability:t2_upgraded_dagger",
-    "tierability:t2_upgraded_spear"
+    "tierability:t2_upgraded_spear",
+
+    "tierability:t3_upgraded_sword",
+    "tierability:t3_upgraded_dagger",
+    "tierability:t3_upgraded_spear",
+
+    "tierability:t1_electro_sword",
+    "tierability:t1_electro_dagger",
+    "tierability:t1_electro_spear",
+
+    "tierability:t2_electro_sword",
+    "tierability:t2_electro_dagger",
+    "tierability:t2_electro_spear",
+
+    "tierability:t1_flame_sword",
+    "tierability:t1_flame_dagger",
+    "tierability:t1_flame_spear",
+
+    "tierability:t2_flame_sword",
+    "tierability:t2_flame_dagger",
+    "tierability:t2_flame_spear"
   ]
 }

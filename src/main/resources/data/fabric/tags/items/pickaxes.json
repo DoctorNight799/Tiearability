@@ -3,7 +3,16 @@
   "values": [
     "tierability:t1_pickaxe",
     "tierability:t2_pickaxe",
+    "tierability:t3_pickaxe",
+
     "tierability:t1_upgraded_pickaxe",
-    "tierability:t2_upgraded_pickaxe"
+    "tierability:t2_upgraded_pickaxe",
+    "tierability:t3_upgraded_pickaxe",
+
+    "tierability:t1_electro_pickaxe",
+    "tierability:t2_electro_pickaxe",
+
+    "tierability:t1_flame_pickaxe",
+    "tierability:t2_flame_pickaxe"
   ]
 }

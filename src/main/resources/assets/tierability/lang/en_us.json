@@ -5,6 +5,8 @@
   "itemGroup.tierability.armor": "Tierability Armor",
   "itemGroup.tierability.blocks": "Tierability Blocks",
 
+  "item.tierability.crimson_stick": "Crimson Stick",
+
   "item.tierability.t1_shard": "T1 Shard",
   "item.tierability.t1_ingot": "T1 Ingot",
   "item.tierability.t1_orb": "T1 Orb",
@@ -42,7 +44,22 @@
 
   "item.tierability.t1_2_hammer": "T1-2 Hammer",
 
+  "item.tierability.t3_helmet": "T3 Helmet",
+  "item.tierability.t3_chestplate": "T3 Chestplate",
+  "item.tierability.t3_leggings": "T3 Leggings",
+  "item.tierability.t3_boots": "T3 Boots",
+
   "item.tierability.t3_orb": "T3 Orb",
+  "item.tierability.t3_scrap": "T3 Scrap",
+  "item.tierability.t3_ingot": "T3 Ingot",
+
+  "item.tierability.t3_sword": "T3 Sword",
+  "item.tierability.t3_dagger": "T3 Dagger",
+  "item.tierability.t3_spear": "T3 Spear",
+  "item.tierability.t3_pickaxe": "T3 Pickaxe",
+  "item.tierability.t3_axe": "T3 Axe",
+  "item.tierability.t3_shovel": "T3 Shovel",
+  "item.tierability.t3_hoe": "T3 Hoe",
 
   "item.tierability.t1_upgraded_sword": "T1 Upgraded Sword",
   "item.tierability.t1_upgraded_dagger": "T1 Upgraded Dagger",
@@ -69,6 +86,19 @@
   "item.tierability.t2_upgraded_chestplate": "T2 Upgraded Chestplate",
   "item.tierability.t2_upgraded_leggings": "T2 Upgraded Leggings",
   "item.tierability.t2_upgraded_boots": "T2 Upgraded Boots",
+
+  "item.tierability.t3_upgraded_helmet": "T3 Upgraded Helmet",
+  "item.tierability.t3_upgraded_chestplate": "T3 Upgraded Chestplate",
+  "item.tierability.t3_upgraded_leggings": "T3 Upgraded Leggings",
+  "item.tierability.t3_upgraded_boots": "T3 Upgraded Boots",
+
+  "item.tierability.t3_upgraded_sword": "T3 Upgraded Sword",
+  "item.tierability.t3_upgraded_dagger": "T3 Upgraded Dagger",
+  "item.tierability.t3_upgraded_spear": "T3 Upgraded Spear",
+  "item.tierability.t3_upgraded_pickaxe": "T3 Upgraded Pickaxe",
+  "item.tierability.t3_upgraded_axe": "T3 Upgraded Axe",
+  "item.tierability.t3_upgraded_shovel": "T3 Upgraded Shovel",
+  "item.tierability.t3_upgraded_hoe": "T3 Upgraded Hoe",
 
   "item.tierability.t1_electro_sword": "T1 Electro Sword",
   "item.tierability.t1_electro_dagger": "T1 Electro Dagger",
@@ -125,11 +155,13 @@
   "item.tierability.flame_shard": "Flame Shard",
   "item.tierability.electro_shard": "Electro Shard",
   "item.tierability.soul_shard": "Soul Shard",
+  "item.tierability.nature_shard": "Nature Shard",
   "item.tierability.soul_fragment": "Soul Fragment",
   "item.tierability.soul": "Soul",
   "item.tierability.flame_ingot": "Flame Ingot",
   "item.tierability.electro_ingot": "Electro Ingot",
   "item.tierability.soul_ingot": "Ingot of Souls",
+  "item.tierability.nature_ingot": "Nature Ingot",
 
   "item.tierability.bottle_with_poison_t1": "Bottle With Poison T1",
   "item.tierability.bottle_with_poison_t2": "Bottle With Poison T2",
@@ -151,14 +183,18 @@
 
   "block.tierability.t1_ore": "T1 Ore",
   "block.tierability.t2_ore": "T2 Ore",
+  "block.tierability.t3_ore": "T3 Ore",
   "block.tierability.t1_block": "T1 Block",
   "block.tierability.t2_block": "T2 Block",
+  "block.tierability.t3_block": "T3 Block",
   "block.tierability.jump_block_t1": "Jump Block T1",
   "block.tierability.jump_block_t2": "Jump Block T2",
+  "block.tierability.jump_block_t3": "Jump Block T3",
   "block.tierability.tiering_block": "Tiering Block",
   "block.tierability.flame_crystal": "Flame Crystal",
   "block.tierability.electro_crystal": "Electro Crystal",
   "block.tierability.soul_crystal": "Soul Crystal",
+  "block.tierability.nature_crystal": "Nature Crystal",
 
   "effect.tierability.electricity_effect": "Electrified",
   "effect.tierability.electric_field_effect": "Electric Field",
@@ -187,12 +223,14 @@
   "tooltip.tierability.full_set_effect": "§7Full Set Effect: ",
   "tooltip.tierability.speed": "Speed",
   "tooltip.tierability.jump_boost": "Jump Boost",
+  "tooltip.tierability.haste": "Haste",
   "tooltip.tierability.electric_field_effect": "Electric Field",
   "tooltip.tierability.fire_resist": "Fire Resistance",
 
   "crystal.tierability.flame": "§cCrystal filled with fire",
   "crystal.tierability.electro": "§eCrystal filled with thunder",
   "crystal.tierability.soul": "§3Crystal filled with souls",
+  "crystal.tierability.nature": "§aCrystal filled with nature",
 
   "container.tier": "Upgrade tier"
 }
