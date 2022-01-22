@@ -3,17 +3,21 @@
   "values": [
     "tierability:t1_ore",
     "tierability:t2_ore",
+    "tierability:t3_ore",
 
     "tierability:t1_block",
     "tierability:t2_block",
+    "tierability:t3_block",
 
     "tierability:jump_block_t1",
     "tierability:jump_block_t2",
+    "tierability:jump_block_t3",
 
     "tierability:tiering_block",
 
     "tierability:flame_crystal",
     "tierability:electro_crystal",
-    "tierability:soul_crystal"
+    "tierability:soul_crystal",
+    "tierability:nature_crystal"
   ]
 }
