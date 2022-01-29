@@ -26,9 +26,9 @@ public class Spells {
 
     public static final Spell EXPLOSION = new Spell((target, world, attacker, random) -> {
         if(!world.isClient){
-            world.createExplosion(attacker, target.getX(), target.getY()+1, target.getZ(), 0.5f, Explosion.DestructionType.NONE);
+            world.createExplosion(attacker, target.getX(), target.getY()+1, target.getZ(), 1f, Explosion.DestructionType.NONE);
         }
-    }, 15*20, true);
+    }, 20*20, true);
 
     public static final Spell LIGHTNING_BOLT = new Spell((target, world, attacker, random) -> {
         BlockHitResult result = SingleSpellBookItem.longRaycast(attacker.world, (PlayerEntity) attacker);
@@ -74,11 +74,11 @@ public class Spells {
             double x = pos.getX() - (attacker.getX() + vec3d.x * 4.0D);
             double y = pos.getY() - (0.5D + attacker.getBodyY(0.5D));
             double z = pos.getZ() - (attacker.getZ() + vec3d.z * 4.0D);
-            FireballEntity fireballEntity = new FireballEntity(world, attacker, x, y, z, 1);
+            FireballEntity fireballEntity = new FireballEntity(world, attacker, x, y, z, 2);
             fireballEntity.setPosition(attacker.getX() + vec3d.x * 4.0D, attacker.getBodyY(0.5D) + 0.5D, fireballEntity.getZ() + vec3d.z * 4.0D);
             world.spawnEntity(fireballEntity);
         }
-    }, 15*20, false);
+    }, 25*20, false);
 
     public static final Spell HOOK_ENTITY = new Spell((target, world, attacker, random) -> {
         if(!world.isClient){
