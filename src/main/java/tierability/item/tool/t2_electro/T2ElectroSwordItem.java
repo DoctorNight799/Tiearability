@@ -22,7 +22,7 @@ public class T2ElectroSwordItem extends CustomSwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        EffectsUtils.add(target, StatusEffects.SLOWNESS, 7*20, 0);
+        EffectsUtils.add(target, StatusEffects.SLOWNESS, 5*20, 0);
         EffectsUtils.add(target, TierabilityEffects.ELECTRICITY_EFFECT, 4*20, 0);
         EffectsUtils.add(target, TierabilityEffects.PARALYSE_EFFECT, 2*20, 0);
         return super.postHit(stack, target, attacker);

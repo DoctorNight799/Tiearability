@@ -45,11 +45,14 @@ public class BaseDaggerItem extends BaseSwordItem {
         if(stack.isOf(TierabilityTools.T1_ELECTRO_DAGGER)){
             tooltip.add((new TranslatableText("item.tierability.electro")));
         }
-        if(stack.isOf(TierabilityTools.T2_ELECTRO_DAGGER)){
+        if(stack.isOf(TierabilityTools.T2_ELECTRO_DAGGER) || stack.isOf(TierabilityTools.T3_ELECTRO_DAGGER)){
             tooltip.add((new TranslatableText("item.tierability.electro_paralyse")));
         }
-        if(stack.isOf(TierabilityTools.T1_FLAME_DAGGER) || stack.isOf(TierabilityTools.T2_FLAME_DAGGER)){
+        if(stack.isOf(TierabilityTools.T1_FLAME_DAGGER) || stack.isOf(TierabilityTools.T2_FLAME_DAGGER) || stack.isOf(TierabilityTools.T3_FLAME_DAGGER)){
             tooltip.add((new TranslatableText("item.tierability.fire")));
+        }
+        if(stack.isOf(TierabilityTools.T1_NATURE_DAGGER) || stack.isOf(TierabilityTools.T2_NATURE_DAGGER) || stack.isOf(TierabilityTools.T3_NATURE_DAGGER)){
+            tooltip.add((new TranslatableText("item.tierability.nature")));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }

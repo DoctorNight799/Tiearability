@@ -10,7 +10,7 @@ public class SoulMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 1100;
+        return 3100;
     }
 
     @Override

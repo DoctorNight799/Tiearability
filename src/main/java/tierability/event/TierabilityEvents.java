@@ -1,8 +1,13 @@
 package tierability.event;
 
+import net.fabricmc.fabric.api.entity.event.v1.ServerEntityCombatEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import tierability.api.armor.ArmorEffectRegistry;
+import tierability.item.armor.TierabilityArmor;
 import tierability.util.ArmorUtils;
 
 import java.util.Arrays;

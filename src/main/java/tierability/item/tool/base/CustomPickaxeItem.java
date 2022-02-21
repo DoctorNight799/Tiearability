@@ -23,11 +23,14 @@ public class CustomPickaxeItem extends BasePickaxeItem {
         if(stack.isOf(TierabilityTools.T1_ELECTRO_PICKAXE)){
             tooltip.add((new TranslatableText("item.tierability.electro")));
         }
-        if(stack.isOf(TierabilityTools.T2_ELECTRO_PICKAXE)){
+        if(stack.isOf(TierabilityTools.T2_ELECTRO_PICKAXE) || stack.isOf(TierabilityTools.T3_ELECTRO_PICKAXE)){
             tooltip.add((new TranslatableText("item.tierability.electro_paralyse")));
         }
-        if(stack.isOf(TierabilityTools.T1_FLAME_PICKAXE) || stack.isOf(TierabilityTools.T2_FLAME_PICKAXE)){
+        if(stack.isOf(TierabilityTools.T1_FLAME_PICKAXE) || stack.isOf(TierabilityTools.T2_FLAME_PICKAXE) || stack.isOf(TierabilityTools.T3_FLAME_PICKAXE)){
             tooltip.add((new TranslatableText("item.tierability.fire")));
+        }
+        if(stack.isOf(TierabilityTools.T1_NATURE_PICKAXE) || stack.isOf(TierabilityTools.T2_NATURE_PICKAXE) || stack.isOf(TierabilityTools.T3_NATURE_PICKAXE)){
+            tooltip.add((new TranslatableText("item.tierability.nature")));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }

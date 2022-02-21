@@ -20,7 +20,7 @@ public class T1ElectroDaggerItem extends BaseDaggerItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if(attacker instanceof PlayerEntity) {
-            EffectsUtils.add(attacker, StatusEffects.SPEED, 6 * 20, 0);
+            EffectsUtils.add(attacker, StatusEffects.SPEED, 4*20, 0);
         }
         EffectsUtils.add(target, TierabilityEffects.ELECTRICITY_EFFECT, 4*20, 0);
         return super.postHit(stack, target, attacker);
@@ -28,7 +28,7 @@ public class T1ElectroDaggerItem extends BaseDaggerItem {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        EffectsUtils.add(user, StatusEffects.INVISIBILITY, 4*20, 0);
+        EffectsUtils.add(user, StatusEffects.INVISIBILITY, 3*20, 0);
         user.getItemCooldownManager().set(this, 10*20);
         return super.use(world, user, hand);
     }

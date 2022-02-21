@@ -19,7 +19,7 @@ public class T1UpgradedAxeItem extends CustomAxeItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if(attacker instanceof PlayerEntity) {
-            EffectsUtils.add(attacker, StatusEffects.STRENGTH, 5*20, 0);
+            EffectsUtils.add(attacker, StatusEffects.STRENGTH, 4*20, 0);
         }
         return super.postHit(stack, target, attacker);
     }
@@ -27,7 +27,7 @@ public class T1UpgradedAxeItem extends CustomAxeItem {
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if(miner instanceof PlayerEntity) {
-            EffectsUtils.add(miner, StatusEffects.HASTE, 7*20, 0);
+            EffectsUtils.add(miner, StatusEffects.HASTE, 5*20, 0);
         }
         return super.postMine(stack, world, state, pos, miner);
     }

@@ -35,12 +35,32 @@
     "tierability:t2_electro_dagger",
     "tierability:t2_electro_spear",
 
+    "tierability:t3_electro_sword",
+    "tierability:t3_electro_dagger",
+    "tierability:t3_electro_spear",
+
     "tierability:t1_flame_sword",
     "tierability:t1_flame_dagger",
     "tierability:t1_flame_spear",
 
     "tierability:t2_flame_sword",
     "tierability:t2_flame_dagger",
-    "tierability:t2_flame_spear"
+    "tierability:t2_flame_spear",
+
+    "tierability:t3_flame_sword",
+    "tierability:t3_flame_dagger",
+    "tierability:t3_flame_spear",
+
+    "tierability:t1_nature_sword",
+    "tierability:t1_nature_dagger",
+    "tierability:t1_nature_spear",
+
+    "tierability:t2_nature_sword",
+    "tierability:t2_nature_dagger",
+    "tierability:t2_nature_spear",
+
+    "tierability:t3_nature_sword",
+    "tierability:t3_nature_dagger",
+    "tierability:t3_nature_spear"
   ]
 }

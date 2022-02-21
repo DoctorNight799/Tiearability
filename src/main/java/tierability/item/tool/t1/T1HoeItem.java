@@ -17,8 +17,8 @@ public class T1HoeItem extends CustomHoeItem {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        EffectsUtils.add(user, StatusEffects.SATURATION, 2, 0);
-        user.getItemCooldownManager().set(this, 5*20);
+        EffectsUtils.add(user, StatusEffects.SATURATION, 1, 0);
+        user.getItemCooldownManager().set(this, 20*20);
         return super.use(world, user, hand);
     }
 }

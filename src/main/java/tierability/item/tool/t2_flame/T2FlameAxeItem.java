@@ -19,7 +19,7 @@ public class T2FlameAxeItem extends CustomAxeItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if(attacker instanceof PlayerEntity) {
-            EffectsUtils.add(attacker, StatusEffects.STRENGTH, 5*20, 0);
+            EffectsUtils.add(attacker, StatusEffects.STRENGTH, 4*20, 0);
         }
         target.setOnFireFor(5);
         return super.postHit(stack, target, attacker);

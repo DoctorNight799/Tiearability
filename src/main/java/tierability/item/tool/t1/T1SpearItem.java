@@ -17,7 +17,7 @@ public class T1SpearItem extends BaseSpearItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if(attacker instanceof PlayerEntity) {
-            EffectsUtils.add(attacker, StatusEffects.JUMP_BOOST, 5*20, 0);
+            EffectsUtils.add(attacker, StatusEffects.JUMP_BOOST, 4*20, 0);
         }
         return super.postHit(stack, target, attacker);
     }

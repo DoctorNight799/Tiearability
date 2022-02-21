@@ -65,11 +65,14 @@ public class BaseSpearItem extends BaseSwordItem {
         if(stack.isOf(TierabilityTools.T1_ELECTRO_SPEAR)){
             tooltip.add((new TranslatableText("item.tierability.electro")));
         }
-        if(stack.isOf(TierabilityTools.T2_ELECTRO_SPEAR)){
+        if(stack.isOf(TierabilityTools.T2_ELECTRO_SPEAR) || stack.isOf(TierabilityTools.T3_ELECTRO_SPEAR)){
             tooltip.add((new TranslatableText("item.tierability.electro_paralyse")));
         }
-        if(stack.isOf(TierabilityTools.T1_FLAME_SPEAR) || stack.isOf(TierabilityTools.T2_FLAME_SPEAR)){
+        if(stack.isOf(TierabilityTools.T1_FLAME_SPEAR) || stack.isOf(TierabilityTools.T2_FLAME_SPEAR) || stack.isOf(TierabilityTools.T3_FLAME_SPEAR)){
             tooltip.add((new TranslatableText("item.tierability.fire")));
+        }
+        if(stack.isOf(TierabilityTools.T1_NATURE_SPEAR) || stack.isOf(TierabilityTools.T2_NATURE_SPEAR) || stack.isOf(TierabilityTools.T3_NATURE_SPEAR)){
+            tooltip.add((new TranslatableText("item.tierability.nature")));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }

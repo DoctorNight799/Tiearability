@@ -17,7 +17,7 @@ public class T2ElectroSpearItem extends BaseSpearItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if(attacker instanceof PlayerEntity) {
-            EffectsUtils.add(attacker, StatusEffects.JUMP_BOOST, 7*20, 0);
+            EffectsUtils.add(attacker, StatusEffects.JUMP_BOOST, 5*20, 0);
         }
         EffectsUtils.add(target, TierabilityEffects.ELECTRICITY_EFFECT, 4*20, 0);
         EffectsUtils.add(target, TierabilityEffects.PARALYSE_EFFECT, 3*20, 0);

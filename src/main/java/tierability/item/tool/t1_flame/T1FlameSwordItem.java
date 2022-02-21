@@ -14,7 +14,7 @@ public class T1FlameSwordItem extends CustomSwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        EffectsUtils.add(target, StatusEffects.SLOWNESS, 6*20, 0);
+        EffectsUtils.add(target, StatusEffects.SLOWNESS, 4*20, 0);
         target.setOnFireFor(3);
         return super.postHit(stack, target, attacker);
     }

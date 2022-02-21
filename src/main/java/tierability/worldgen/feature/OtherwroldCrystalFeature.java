@@ -2,6 +2,7 @@ package tierability.worldgen.feature;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -14,18 +15,26 @@ import tierability.block.TierabilityBlocks;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CrystalFeature extends Feature<DefaultFeatureConfig> {
+public class OtherwroldCrystalFeature extends Feature<DefaultFeatureConfig> {
 
-    public static final ArrayList<Block> CRYSTALS = new ArrayList<>(List.of(TierabilityBlocks.FLAME_CRYSTAL, TierabilityBlocks.ELECTRO_CRYSTAL, TierabilityBlocks.SOUL_CRYSTAL));
+    public static final ArrayList<Block> OTHERWORLD_CRYSTALS = new ArrayList<>(List.of(TierabilityBlocks.ELECTRO_CRYSTAL, TierabilityBlocks.NATURE_CRYSTAL));
 
-    public CrystalFeature() {
+    public OtherwroldCrystalFeature() {
         super(DefaultFeatureConfig.CODEC);
+    }
+
+    protected static boolean isSoul(BlockState state) {
+        return state.isOf(Blocks.SOUL_SAND) || state.isOf(Blocks.SOUL_SOIL);
+    }
+
+    protected static boolean isMagma(BlockState state) {
+        return state.isOf(Blocks.MAGMA_BLOCK);
     }
 
     @Override
     public boolean generate(FeatureContext<DefaultFeatureConfig> context) {
         boolean generated = false;
-        BlockState state = CRYSTALS.get(context.getRandom().nextInt(CRYSTALS.size())).getDefaultState();
+        BlockState state = OTHERWORLD_CRYSTALS.get(context.getRandom().nextInt(OTHERWORLD_CRYSTALS.size())).getDefaultState();
         for(int i = 0; i <= 30; i++){
             int x = context.getOrigin().getX() + context.getRandom().nextInt(7);
             int z = context.getOrigin().getZ() + context.getRandom().nextInt(7);

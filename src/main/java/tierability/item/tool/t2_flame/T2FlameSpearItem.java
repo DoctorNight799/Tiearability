@@ -16,7 +16,7 @@ public class T2FlameSpearItem extends BaseSpearItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if(attacker instanceof PlayerEntity) {
-            EffectsUtils.add(attacker, StatusEffects.JUMP_BOOST, 7*20, 0);
+            EffectsUtils.add(attacker, StatusEffects.JUMP_BOOST, 5*20, 0);
         }
         target.setOnFireFor(5);
         return super.postHit(stack, target, attacker);

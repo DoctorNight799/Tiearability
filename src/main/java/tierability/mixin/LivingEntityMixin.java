@@ -15,16 +15,15 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import tierability.client.particles.TierabilityParticles;
 import tierability.effect.TierabilityEffects;
 import tierability.item.AmuletItem;
 import tierability.item.BottleWithPoisonItem;
 import tierability.item.TierabilityItems;
 import tierability.item.armor.TierabilityArmor;
 import tierability.item.tool.TierabilityTools;
-import tierability.item.tool.soulcollector.SoulcollectorSwordItem;
 import tierability.util.ArmorUtils;
 import tierability.util.EffectsUtils;
+import tierability.util.SoulCountUtil;
 import tierability.util.TrinketsUtils;
 
 @Mixin(LivingEntity.class)
@@ -72,9 +71,9 @@ public abstract class LivingEntityMixin {
             if (attacker.getStackInHand(Hand.MAIN_HAND).isOf(TierabilityTools.SOULCOLLECTOR)) {
                 if (!entity.world.isClient) {
                     ItemStack attackerStack = attacker.getStackInHand(Hand.MAIN_HAND);
-                    int killCount = SoulcollectorSwordItem.getKillCount(attackerStack);
+                    int killCount = SoulCountUtil.getKillCount(attackerStack);
                     if (!(killCount == 1000)) {
-                        SoulcollectorSwordItem.setKillCount(attackerStack, killCount + 1);
+                        SoulCountUtil.setKillCount(attackerStack, killCount + 1);
                     }
                     ((ServerWorld) entity.world).spawnParticles(ParticleTypes.SOUL, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
                 }

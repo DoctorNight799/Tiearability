@@ -18,7 +18,7 @@ public class T2PickaxeItem extends CustomPickaxeItem {
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if(miner instanceof PlayerEntity) {
-            EffectsUtils.add(miner, StatusEffects.HASTE, 7*20, 0);
+            EffectsUtils.add(miner, StatusEffects.HASTE, 5*20, 0);
         }
         return super.postMine(stack, world, state, pos, miner);
     }

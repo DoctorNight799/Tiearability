@@ -23,11 +23,14 @@ public class CustomShovelItem extends BaseShovelItem {
         if(stack.isOf(TierabilityTools.T1_ELECTRO_SHOVEL)){
             tooltip.add((new TranslatableText("item.tierability.electro")));
         }
-        if(stack.isOf(TierabilityTools.T2_ELECTRO_SHOVEL)){
+        if(stack.isOf(TierabilityTools.T2_ELECTRO_SHOVEL) || stack.isOf(TierabilityTools.T3_ELECTRO_SHOVEL)){
             tooltip.add((new TranslatableText("item.tierability.electro_paralyse")));
         }
-        if(stack.isOf(TierabilityTools.T1_FLAME_SHOVEL) || stack.isOf(TierabilityTools.T2_FLAME_SHOVEL)){
+        if(stack.isOf(TierabilityTools.T1_FLAME_SHOVEL) || stack.isOf(TierabilityTools.T2_FLAME_SHOVEL) || stack.isOf(TierabilityTools.T3_FLAME_SHOVEL)){
             tooltip.add((new TranslatableText("item.tierability.fire")));
+        }
+        if(stack.isOf(TierabilityTools.T1_NATURE_SHOVEL) || stack.isOf(TierabilityTools.T2_NATURE_SHOVEL) || stack.isOf(TierabilityTools.T3_NATURE_SHOVEL)){
+            tooltip.add((new TranslatableText("item.tierability.nature")));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }

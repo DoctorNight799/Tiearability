@@ -19,7 +19,7 @@ public class T2UpgradedShovelItem extends CustomShovelItem {
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if(miner instanceof PlayerEntity) {
-            EffectsUtils.add(miner, StatusEffects.HASTE, 8*20, 0);
+            EffectsUtils.add(miner, StatusEffects.HASTE, 2*20, 1);
         }
         return super.postMine(stack, world, state, pos, miner);
     }

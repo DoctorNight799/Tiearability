@@ -10,7 +10,7 @@ public class T2FlameMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 1960;
+        return 1940;
     }
 
     @Override

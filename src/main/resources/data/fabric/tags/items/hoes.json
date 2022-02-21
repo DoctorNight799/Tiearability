@@ -11,8 +11,14 @@
 
     "tierability:t1_electro_hoe",
     "tierability:t2_electro_hoe",
+    "tierability:t3_electro_hoe",
 
     "tierability:t1_flame_hoe",
-    "tierability:t2_flame_hoe"
+    "tierability:t2_flame_hoe",
+    "tierability:t3_flame_hoe",
+
+    "tierability:t1_nature_hoe",
+    "tierability:t2_nature_hoe",
+    "tierability:t3_nature_hoe"
   ]
 }

@@ -14,7 +14,7 @@ public class T3UpgradedSwordItem extends CustomSwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        EffectsUtils.add(target, StatusEffects.SLOWNESS, 200, 1);
+        EffectsUtils.add(target, StatusEffects.SLOWNESS, 7*20, 0);
         return super.postHit(stack, target, attacker);
     }
 }

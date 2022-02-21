@@ -19,7 +19,7 @@ public class T1FlameAxeItem extends CustomAxeItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if(attacker instanceof PlayerEntity) {
-            EffectsUtils.add(attacker, StatusEffects.STRENGTH, 4*20, 0);
+            EffectsUtils.add(attacker, StatusEffects.STRENGTH, 3*20, 0);
         }
         target.setOnFireFor(3);
         return super.postHit(stack, target, attacker);
@@ -28,7 +28,7 @@ public class T1FlameAxeItem extends CustomAxeItem {
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if(miner instanceof PlayerEntity) {
-            EffectsUtils.add(miner, StatusEffects.HASTE, 5*20, 0);
+            EffectsUtils.add(miner, StatusEffects.HASTE, 4*20, 0);
         }
         return super.postMine(stack, world, state, pos, miner);
     }

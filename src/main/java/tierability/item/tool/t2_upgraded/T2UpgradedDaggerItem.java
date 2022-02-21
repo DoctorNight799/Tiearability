@@ -19,15 +19,15 @@ public class T2UpgradedDaggerItem extends BaseDaggerItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if(attacker instanceof PlayerEntity) {
-            EffectsUtils.add(attacker, StatusEffects.SPEED, 8*20, 0);
+            EffectsUtils.add(attacker, StatusEffects.SPEED, 6*20, 0);
         }
         return super.postHit(stack, target, attacker);
     }
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        EffectsUtils.add(user, StatusEffects.INVISIBILITY, 6*20, 0);
-        user.getItemCooldownManager().set(this, 12*20);
+        EffectsUtils.add(user, StatusEffects.INVISIBILITY, 5*20, 0);
+        user.getItemCooldownManager().set(this, 18*20);
         return super.use(world, user, hand);
     }
 }

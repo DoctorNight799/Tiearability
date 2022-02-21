@@ -54,6 +54,11 @@ public class TierabilityArmor {
     public static final Item T2_LEGGINGS_FLAME = new BaseArmorItem(TierabilityArmorMaterials.T2_FLAME_ARMOR_MATERIAL, EquipmentSlot.LEGS, "fire_resist");
     public static final Item T2_BOOTS_FLAME = new BaseArmorItem(TierabilityArmorMaterials.T2_FLAME_ARMOR_MATERIAL, EquipmentSlot.FEET, "fire_resist");
 
+    public static final Item T3_HELMET_FLAME = new BaseArmorItem(TierabilityArmorMaterials.T3_FLAME_ARMOR_MATERIAL, EquipmentSlot.HEAD, "fire_resist");
+    public static final Item T3_CHESTPLATE_FLAME = new BaseArmorItem(TierabilityArmorMaterials.T3_FLAME_ARMOR_MATERIAL, EquipmentSlot.CHEST, "fire_resist");
+    public static final Item T3_LEGGINGS_FLAME = new BaseArmorItem(TierabilityArmorMaterials.T3_FLAME_ARMOR_MATERIAL, EquipmentSlot.LEGS, "fire_resist");
+    public static final Item T3_BOOTS_FLAME = new BaseArmorItem(TierabilityArmorMaterials.T3_FLAME_ARMOR_MATERIAL, EquipmentSlot.FEET, "fire_resist");
+
     public static final Item T1_HELMET_ELECTRO = new BaseArmorItem(TierabilityArmorMaterials.T1_ELECTRO_ARMOR_MATERIAL, EquipmentSlot.HEAD, "electric_field_effect");
     public static final Item T1_CHESTPLATE_ELECTRO = new BaseArmorItem(TierabilityArmorMaterials.T1_ELECTRO_ARMOR_MATERIAL, EquipmentSlot.CHEST, "electric_field_effect");
     public static final Item T1_LEGGINGS_ELECTRO = new BaseArmorItem(TierabilityArmorMaterials.T1_ELECTRO_ARMOR_MATERIAL, EquipmentSlot.LEGS, "electric_field_effect");
@@ -63,6 +68,11 @@ public class TierabilityArmor {
     public static final Item T2_CHESTPLATE_ELECTRO = new BaseArmorItem(TierabilityArmorMaterials.T2_ELECTRO_ARMOR_MATERIAL, EquipmentSlot.CHEST, "electric_field_effect");
     public static final Item T2_LEGGINGS_ELECTRO = new BaseArmorItem(TierabilityArmorMaterials.T2_ELECTRO_ARMOR_MATERIAL, EquipmentSlot.LEGS, "electric_field_effect");
     public static final Item T2_BOOTS_ELECTRO = new BaseArmorItem(TierabilityArmorMaterials.T2_ELECTRO_ARMOR_MATERIAL, EquipmentSlot.FEET, "electric_field_effect");
+
+    public static final Item T3_HELMET_ELECTRO = new BaseArmorItem(TierabilityArmorMaterials.T3_ELECTRO_ARMOR_MATERIAL, EquipmentSlot.HEAD, "electric_field_effect");
+    public static final Item T3_CHESTPLATE_ELECTRO = new BaseArmorItem(TierabilityArmorMaterials.T3_ELECTRO_ARMOR_MATERIAL, EquipmentSlot.CHEST, "electric_field_effect");
+    public static final Item T3_LEGGINGS_ELECTRO = new BaseArmorItem(TierabilityArmorMaterials.T3_ELECTRO_ARMOR_MATERIAL, EquipmentSlot.LEGS, "electric_field_effect");
+    public static final Item T3_BOOTS_ELECTRO = new BaseArmorItem(TierabilityArmorMaterials.T3_ELECTRO_ARMOR_MATERIAL, EquipmentSlot.FEET, "electric_field_effect");
 
     static void registerArmorSet(String prefix, Item entryHelmet, Item entryChestplate, Item entryLeggings, Item entryBoots){
         Registry.register(Registry.ITEM, new Identifier(TierabilityMod.MODID, prefix + "_helmet"), entryHelmet);
@@ -81,10 +91,12 @@ public class TierabilityArmor {
         ArmorEffectRegistry.register("T3 Upgraded Armor", T3_HELMET_UPGRADED, T3_CHESTPLATE_UPGRADED, T3_LEGGINGS_UPGRADED, T3_BOOTS_UPGRADED, StatusEffects.HASTE, 1);
 
         ArmorEffectRegistry.register("T1 Flame Armor", T1_HELMET_FLAME, T1_CHESTPLATE_FLAME, T1_LEGGINGS_FLAME, T1_BOOTS_FLAME, StatusEffects.FIRE_RESISTANCE, 0);
-        ArmorEffectRegistry.register("T2 Flame Armor", T2_HELMET_FLAME, T2_CHESTPLATE_FLAME, T2_LEGGINGS_FLAME, T2_BOOTS_FLAME, StatusEffects.FIRE_RESISTANCE, 1);
+        ArmorEffectRegistry.register("T2 Flame Armor", T2_HELMET_FLAME, T2_CHESTPLATE_FLAME, T2_LEGGINGS_FLAME, T2_BOOTS_FLAME, StatusEffects.FIRE_RESISTANCE, 0);
+        ArmorEffectRegistry.register("T3 Flame Armor", T3_HELMET_FLAME, T3_CHESTPLATE_FLAME, T3_LEGGINGS_FLAME, T3_BOOTS_FLAME, StatusEffects.FIRE_RESISTANCE, 0);
 
         ArmorEffectRegistry.register("T1 Electro Armor", T1_HELMET_ELECTRO, T1_CHESTPLATE_ELECTRO, T1_LEGGINGS_ELECTRO, T1_BOOTS_ELECTRO, TierabilityEffects.ELECTRIC_FIELD_EFFECT, 0);
         ArmorEffectRegistry.register("T2 Electro Armor", T2_HELMET_ELECTRO, T2_CHESTPLATE_ELECTRO, T2_LEGGINGS_ELECTRO, T2_BOOTS_ELECTRO, TierabilityEffects.ELECTRIC_FIELD_EFFECT, 0);
+        ArmorEffectRegistry.register("T3 Electro Armor", T3_HELMET_ELECTRO, T3_CHESTPLATE_ELECTRO, T3_LEGGINGS_ELECTRO, T3_BOOTS_ELECTRO, TierabilityEffects.ELECTRIC_FIELD_EFFECT, 0);
     }
 
     public static void register(){
@@ -98,9 +110,11 @@ public class TierabilityArmor {
 
         registerArmorSet("t1_flame", T1_HELMET_FLAME, T1_CHESTPLATE_FLAME, T1_LEGGINGS_FLAME, T1_BOOTS_FLAME);
         registerArmorSet("t2_flame", T2_HELMET_FLAME, T2_CHESTPLATE_FLAME, T2_LEGGINGS_FLAME, T2_BOOTS_FLAME);
+        registerArmorSet("t3_flame", T3_HELMET_FLAME, T3_CHESTPLATE_FLAME, T3_LEGGINGS_FLAME, T3_BOOTS_FLAME);
 
         registerArmorSet("t1_electro", T1_HELMET_ELECTRO, T1_CHESTPLATE_ELECTRO, T1_LEGGINGS_ELECTRO, T1_BOOTS_ELECTRO);
         registerArmorSet("t2_electro", T2_HELMET_ELECTRO, T2_CHESTPLATE_ELECTRO, T2_LEGGINGS_ELECTRO, T2_BOOTS_ELECTRO);
+        registerArmorSet("t3_electro", T3_HELMET_ELECTRO, T3_CHESTPLATE_ELECTRO, T3_LEGGINGS_ELECTRO, T3_BOOTS_ELECTRO);
 
         registerArmorEffects();
     }

@@ -11,8 +11,14 @@
 
     "tierability:t1_electro_shovel",
     "tierability:t2_electro_shovel",
+    "tierability:t3_electro_shovel",
 
     "tierability:t1_flame_shovel",
-    "tierability:t2_flame_shovel"
+    "tierability:t2_flame_shovel",
+    "tierability:t3_flame_shovel",
+
+    "tierability:t1_nature_shovel",
+    "tierability:t2_nature_shovel",
+    "tierability:t3_nature_shovel"
   ]
 }

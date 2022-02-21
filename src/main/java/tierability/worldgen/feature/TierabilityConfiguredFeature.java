@@ -33,12 +33,19 @@ public class TierabilityConfiguredFeature {
     private static final PlacedFeature ORE_T2_OVERWORLD_PLACED_FEATURE = ORE_T2_OVERWORLD.withPlacement(CountPlacementModifier.of(10), //number of veins per chunk
             SquarePlacementModifier.of(), /*spreading horizontally*/ HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(40)));
 
-    public static final Feature<DefaultFeatureConfig> CRYSTAL_FEATURE = new CrystalFeature();
+    public static final Feature<DefaultFeatureConfig> OTHERWORLD_CRYSTAL_FEATURE = new OtherwroldCrystalFeature();
 
-    public static final ConfiguredFeature<?, ?> CRYSTAL_FEATURE_CONFIG = CRYSTAL_FEATURE
+    public static final Feature<DefaultFeatureConfig> NETHER_CRYSTAL_FEATURE = new NetherCrystalFeature();
+
+    public static final ConfiguredFeature<?, ?> OTHERWORLD_CRYSTAL_FEATURE_CONFIG = OTHERWORLD_CRYSTAL_FEATURE
             .configure(new DefaultFeatureConfig());
 
-    public static final PlacedFeature CRYSTAL_FEATURE_PLACED = new PlacedFeature(() -> CRYSTAL_FEATURE_CONFIG, List.of(PlacedFeatures.BOTTOM_TO_120_RANGE));
+    public static final ConfiguredFeature<?, ?> NETHER_CRYSTAL_FEATURE_CONFIG = NETHER_CRYSTAL_FEATURE
+            .configure(new DefaultFeatureConfig());
+
+    public static final PlacedFeature OTHERWORLD_CRYSTAL_FEATURE_PLACED = new PlacedFeature(() -> OTHERWORLD_CRYSTAL_FEATURE_CONFIG, List.of(PlacedFeatures.BOTTOM_TO_120_RANGE));
+
+    public static final PlacedFeature NETHER_CRYSTAL_FEATURE_PLACED = new PlacedFeature(() -> NETHER_CRYSTAL_FEATURE_CONFIG, List.of(PlacedFeatures.BOTTOM_TO_120_RANGE));
 
     static public void register() {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(MODID, "ore_t1_overworld"), ORE_T1_OVERWORLD);
@@ -49,17 +56,26 @@ public class TierabilityConfiguredFeature {
         Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(MODID, "ore_t2_overworld"), ORE_T2_OVERWORLD_PLACED_FEATURE);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, RegistryKey.of(Registry.PLACED_FEATURE_KEY, new Identifier(MODID, "ore_t2_overworld")));
 
-        Registry.register(Registry.FEATURE, new Identifier(MODID, "crystal_feature"), CRYSTAL_FEATURE);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(MODID, "crystal_feature"), CRYSTAL_FEATURE_CONFIG);
-        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(MODID, "crystal_feature"), CRYSTAL_FEATURE_PLACED);
+        Registry.register(Registry.FEATURE, new Identifier(MODID, "otherworld_crystal_feature"), OTHERWORLD_CRYSTAL_FEATURE);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(MODID, "otherworld_crystal_feature"), OTHERWORLD_CRYSTAL_FEATURE_CONFIG);
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(MODID, "otherworld_crystal_feature"), OTHERWORLD_CRYSTAL_FEATURE_PLACED);
 
         BiomeModifications.addFeature(ctx -> {
                     Biome.Category category = ctx.getBiome().getCategory();
                     return !category.equals(Biome.Category.NETHER) && !category.equals(Biome.Category.THEEND);
                 },
                 GenerationStep.Feature.UNDERGROUND_DECORATION,
-                BuiltinRegistries.PLACED_FEATURE.getKey(CRYSTAL_FEATURE_PLACED).orElseThrow());
+                BuiltinRegistries.PLACED_FEATURE.getKey(OTHERWORLD_CRYSTAL_FEATURE_PLACED).orElseThrow());
+
+        Registry.register(Registry.FEATURE, new Identifier(MODID, "nether_crystal_feature"), NETHER_CRYSTAL_FEATURE);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(MODID, "nether_crystal_feature"), NETHER_CRYSTAL_FEATURE_CONFIG);
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(MODID, "nether_crystal_feature"), NETHER_CRYSTAL_FEATURE_PLACED);
+
+        BiomeModifications.addFeature(ctx -> {
+                    Biome.Category category = ctx.getBiome().getCategory();
+                    return !category.equals(Biome.Category.NETHER) && !category.equals(Biome.Category.THEEND);
+                },
+                GenerationStep.Feature.UNDERGROUND_DECORATION,
+                BuiltinRegistries.PLACED_FEATURE.getKey(NETHER_CRYSTAL_FEATURE_PLACED).orElseThrow());
     }
-
-
 }

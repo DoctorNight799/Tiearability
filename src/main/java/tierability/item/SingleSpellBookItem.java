@@ -1,6 +1,11 @@
 package tierability.item;
 
+import com.google.common.collect.ImmutableMultimap;
+import com.google.common.collect.Multimap;
+import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.attribute.EntityAttribute;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -18,8 +23,13 @@ public class SingleSpellBookItem extends BasedItem {
 
     private final Spells.Spell spell;
 
-    public SingleSpellBookItem(Settings settings, Spells.Spell spell) {
+    private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
+
+    public SingleSpellBookItem(Settings settings, Spells.Spell spell,  float attackRange) {
         super(settings.maxCount(1));
+        ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
+        builder.put(ReachEntityAttributes.ATTACK_RANGE, new EntityAttributeModifier("Book modifier", attackRange, EntityAttributeModifier.Operation.ADDITION));
+        this.attributeModifiers = builder.build();
         this.spell = spell;
     }
 

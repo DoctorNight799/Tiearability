@@ -43,17 +43,17 @@ public class TierabilityItems {
     public static final Item BOTTLE_WITH_POISON_T2 = add("bottle_with_poison_t2", new BottleWithPoisonItem(artSettings(), 160, 0));
     public static final Item BOTTLE_WITH_POISON_T3 = add("bottle_with_poison_t3", new BottleWithPoisonItem(artSettings(), 200, 1));
     public static final Item BOTTLE_WITH_POISON_T4 = add("bottle_with_poison_t4", new BottleWithPoisonItem(artSettings(), 240, 2));
-    public static final Item EXPLOSION_SPELL_BOOK = add("explosion_book", new SingleSpellBookItem(artSettings(), Spells.EXPLOSION));
-    public static final Item LIGHTNING_BOLT_SPELL_BOOK = add("lightning_bolt_book", new SingleSpellBookItem(artSettings(), Spells.LIGHTNING_BOLT));
-    public static final Item INSTA_KILL_SPELL_BOOK = add("death_note", new SingleSpellBookItem(artSettings(), Spells.INSTA_KILL));
-    public static final Item NEGATIVE_EFFECT_SPELL_BOOK = add("negative_book", new SingleSpellBookItem(artSettings(), Spells.RANDOM_NEGATIVE_EFFECT));
-    public static final Item POSITIVE_EFFECT_SPELL_BOOK = add("positive_book", new SingleSpellBookItem(artSettings(), Spells.RANDOM_POSITIVE_EFFECT));
-    public static final Item FIREBALL_SPELL_BOOK = add("fireball_book", new SingleSpellBookItem(artSettings(), Spells.CAST_FIREBALL));
-    public static final Item HOOK_SPELL_BOOK = add("hook_book", new SingleSpellBookItem(artSettings(), Spells.HOOK_ENTITY));
-    public static final Item TELEPORT_SPELL_BOOK = add("teleport_book", new SingleSpellBookItem(artSettings(), Spells.CHANGE_ENTITY_POS));
-    public static final Item SWAP_SPELL_BOOK = add("swap_book", new SingleSpellBookItem(artSettings(), Spells.CHANGE_WITH_ENTITY));
-    public static final Item RANDOM_SPELL_BOOK_T1 = add("random_book_t1", new RandomSpellBook(artSettings(), new ArrayList<>(List.of(Spells.HOOK_ENTITY, Spells.CHANGE_ENTITY_POS, Spells.CHANGE_WITH_ENTITY, Spells.EXPLOSION))));
-    public static final Item RANDOM_SPELL_BOOK_T2 = add("random_book_t2", new RandomSpellBook(artSettings(), new ArrayList<>(List.of(Spells.HOOK_ENTITY, Spells.CHANGE_ENTITY_POS, Spells.CHANGE_WITH_ENTITY, Spells.EXPLOSION, Spells.CAST_FIREBALL, Spells.LIGHTNING_BOLT, Spells.RANDOM_NEGATIVE_EFFECT, Spells.RANDOM_POSITIVE_EFFECT))));
+    public static final Item EXPLOSION_SPELL_BOOK = add("explosion_book", new SingleSpellBookItem(artSettings(), Spells.EXPLOSION, 4));
+    public static final Item LIGHTNING_BOLT_SPELL_BOOK = add("lightning_bolt_book", new SingleSpellBookItem(artSettings(), Spells.LIGHTNING_BOLT, 4));
+    public static final Item INSTA_KILL_SPELL_BOOK = add("death_note", new SingleSpellBookItem(artSettings(), Spells.INSTA_KILL, 0));
+    public static final Item NEGATIVE_EFFECT_SPELL_BOOK = add("negative_book", new SingleSpellBookItem(artSettings(), Spells.RANDOM_NEGATIVE_EFFECT, 0));
+    public static final Item POSITIVE_EFFECT_SPELL_BOOK = add("positive_book", new SingleSpellBookItem(artSettings(), Spells.RANDOM_POSITIVE_EFFECT, 0));
+    public static final Item FIREBALL_SPELL_BOOK = add("fireball_book", new SingleSpellBookItem(artSettings(), Spells.CAST_FIREBALL, 0));
+    public static final Item HOOK_SPELL_BOOK = add("hook_book", new SingleSpellBookItem(artSettings(), Spells.HOOK_ENTITY, 6));
+    public static final Item TELEPORT_SPELL_BOOK = add("teleport_book", new SingleSpellBookItem(artSettings(), Spells.CHANGE_ENTITY_POS, 6));
+    public static final Item SWAP_SPELL_BOOK = add("swap_book", new SingleSpellBookItem(artSettings(), Spells.CHANGE_WITH_ENTITY, 6));
+    public static final Item RANDOM_SPELL_BOOK_T1 = add("random_book_t1", new RandomSpellBook(artSettings(), new ArrayList<>(List.of(Spells.HOOK_ENTITY, Spells.CHANGE_ENTITY_POS, Spells.CHANGE_WITH_ENTITY, Spells.EXPLOSION)), 5));
+    public static final Item RANDOM_SPELL_BOOK_T2 = add("random_book_t2", new RandomSpellBook(artSettings(), new ArrayList<>(List.of(Spells.HOOK_ENTITY, Spells.CHANGE_ENTITY_POS, Spells.CHANGE_WITH_ENTITY, Spells.EXPLOSION, Spells.CAST_FIREBALL, Spells.LIGHTNING_BOLT, Spells.RANDOM_NEGATIVE_EFFECT, Spells.RANDOM_POSITIVE_EFFECT)), 5));
     public static final Item SAFE_AMULET = add("safe_amulet", new AmuletItem(artSettings().maxCount(1)));
 
     private static <I extends Item> I add(String name, I item) {
