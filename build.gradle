@@ -30,9 +30,9 @@ dependencies {
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_version}")
 	modImplementation "dev.emi:trinkets:${trinkets_version}"
 	modImplementation "com.github.paulevsGitch:BCLib:${project.bclib_version}"
-	include modImplementation("ru.pinkgoosik:cosmetica:0.3.2-1.17.1-fabric")
+	include modImplementation("ru.pinkgoosik:cosmetica:0.4.0")
 
-	modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:7.1.357"
+	modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:7.1.432"
 	modRuntime "com.terraformersmc:modmenu:3.0.1"
 	modRuntime "supercoder79:databreaker:0.2.8"
 }

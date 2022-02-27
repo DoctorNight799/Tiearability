@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:t2_dagger"
+  },
+  "addition": {
+    "item": "tierability:electro_ingot"
+  },
+  "result": {
+    "item": "tierability:t2_electro_dagger"
+  }
+}
