@@ -32,7 +32,7 @@ dependencies {
 	modImplementation "com.github.paulevsGitch:BCLib:${project.bclib_version}"
 	include modImplementation("ru.pinkgoosik:cosmetica:0.4.0")
 
-	modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:7.1.432"
+	modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:7.3.432"
 	modRuntime "com.terraformersmc:modmenu:3.0.1"
 	modRuntime "supercoder79:databreaker:0.2.8"
 }
