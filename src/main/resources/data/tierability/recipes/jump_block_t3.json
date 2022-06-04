@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:jump_block_t1"
+  },
+  "addition": {
+    "item": "tierability:t3_scrap"
+  },
+  "result": {
+    "item": "tierability:jump_block_t3"
+  }
+}

@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.10-SNAPSHOT'
+	id 'fabric-loom' version '0.11-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -30,11 +30,11 @@ dependencies {
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_version}")
 	modImplementation "dev.emi:trinkets:${trinkets_version}"
 	modImplementation "com.github.paulevsGitch:BCLib:${project.bclib_version}"
-	include modImplementation("ru.pinkgoosik:cosmetica:0.3.2-1.17.1-fabric")
+	include modImplementation("ru.pinkgoosik:cosmetica:0.4.0")
 
-	modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:7.1.357"
-	modRuntime "com.terraformersmc:modmenu:3.0.1"
-	modRuntime "supercoder79:databreaker:0.2.8"
+	modLocalRuntime  "me.shedaniel:RoughlyEnoughItems-fabric:7.3.432"
+	modLocalRuntime  "com.terraformersmc:modmenu:3.0.1"
+	modLocalRuntime  "supercoder79:databreaker:0.2.8"
 }
 
 processResources {

@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:t3_hoe"
+  },
+  "addition": {
+    "item": "tierability:t3_ingot"
+  },
+  "result": {
+    "item": "tierability:t3_upgraded_hoe"
+  }
+}

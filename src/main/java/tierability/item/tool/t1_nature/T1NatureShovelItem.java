@@ -5,13 +5,15 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import tierability.item.tool.base.CustomShovelItem;
+import tierability.item.tool.base.NatureShovelItem;
 import tierability.util.EffectsUtils;
 
-public class T1NatureShovelItem extends CustomShovelItem {
+public class T1NatureShovelItem extends NatureShovelItem {
     public T1NatureShovelItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
         super(material, attackDamage, attackSpeed, settings);
     }
@@ -22,5 +24,12 @@ public class T1NatureShovelItem extends CustomShovelItem {
             EffectsUtils.add(miner, StatusEffects.HASTE, 4*20, 0);
         }
         return super.postMine(stack, world, state, pos, miner);
+    }
+
+    @Override
+    public ActionResult useOnBlock(ItemUsageContext context) {
+        PlayerEntity player = context.getPlayer();
+        player.getItemCooldownManager().set(this, 30*20);
+        return super.useOnBlock(context);
     }
 }

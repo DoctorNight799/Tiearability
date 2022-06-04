@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:t1_leggings"
+  },
+  "addition": {
+    "item": "tierability:electro_ingot"
+  },
+  "result": {
+    "item": "tierability:t1_electro_leggings"
+  }
+}

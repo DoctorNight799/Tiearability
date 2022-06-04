@@ -1,5 +1,6 @@
 package tierability.mixin;
 
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -9,6 +10,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -74,6 +77,7 @@ public abstract class LivingEntityMixin {
                     int killCount = SoulCountUtil.getKillCount(attackerStack);
                     if (!(killCount == 1000)) {
                         SoulCountUtil.setKillCount(attackerStack, killCount + 1);
+                        MinecraftClient.getInstance().inGameHud.getChatHud().addMessage(Text.of(Formatting.AQUA + "You've got a soul."));
                     }
                     ((ServerWorld) entity.world).spawnParticles(ParticleTypes.SOUL, entity.getX(), entity.getY() + 1, entity.getZ(), 1, 0, 0, 0, 0);
                 }

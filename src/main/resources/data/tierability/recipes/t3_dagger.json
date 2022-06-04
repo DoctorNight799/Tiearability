@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "tierability:t3_scrap"
+    }
+  },
+  "result": {
+    "item": "tierability:t3_dagger"
+  }
+}

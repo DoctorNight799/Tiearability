@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:t3_dagger"
+  },
+  "addition": {
+    "item": "tierability:t3_nature"
+  },
+  "result": {
+    "item": "tierability:t3_nature_dagger"
+  }
+}

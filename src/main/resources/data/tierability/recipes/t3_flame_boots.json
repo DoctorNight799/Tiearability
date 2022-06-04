@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:t3_boots"
+  },
+  "addition": {
+    "item": "tierability:flame_ingot"
+  },
+  "result": {
+    "item": "tierability:t3_flame_boots"
+  }
+}

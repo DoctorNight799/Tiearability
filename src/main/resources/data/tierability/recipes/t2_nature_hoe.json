@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:t2_hoe"
+  },
+  "addition": {
+    "item": "tierability:nature_ingot"
+  },
+  "result": {
+    "item": "tierability:t2_nature_hoe"
+  }
+}

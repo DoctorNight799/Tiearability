@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:t3_sword"
+  },
+  "addition": {
+    "item": "tierability:t3_flame"
+  },
+  "result": {
+    "item": "tierability:t3_flame_sword"
+  }
+}

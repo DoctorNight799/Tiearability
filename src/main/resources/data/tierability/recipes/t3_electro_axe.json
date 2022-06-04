@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:t3_axe"
+  },
+  "addition": {
+    "item": "tierability:t3_electro"
+  },
+  "result": {
+    "item": "tierability:t3_electro_axe"
+  }
+}

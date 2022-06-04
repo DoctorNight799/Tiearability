@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:t3_shovel"
+  },
+  "addition": {
+    "item": "tierability:t3_nature"
+  },
+  "result": {
+    "item": "tierability:t3_nature_shovel"
+  }
+}

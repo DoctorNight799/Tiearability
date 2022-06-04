@@ -1,0 +1,12 @@
+{
+  "type": "tierability:tiering",
+  "base": {
+    "item": "tierability:t3_leggings"
+  },
+  "addition": {
+    "item": "tierability:nature_ingot"
+  },
+  "result": {
+    "item": "tierability:t3_nature_leggings"
+  }
+}
