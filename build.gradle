@@ -30,7 +30,6 @@ dependencies {
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_version}")
 	modImplementation "dev.emi:trinkets:${trinkets_version}"
 	modImplementation "com.github.paulevsGitch:BCLib:${project.bclib_version}"
-	include modImplementation("ru.pinkgoosik:cosmetica:0.4.0")
 
 	modLocalRuntime  "me.shedaniel:RoughlyEnoughItems-fabric:7.3.432"
 	modLocalRuntime  "com.terraformersmc:modmenu:3.0.1"
